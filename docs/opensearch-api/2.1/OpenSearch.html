@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: OpenSearch
+  
+    &mdash; Documentation by YARD 0.9.28
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "OpenSearch";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index (O)</a> &raquo;
+    
+    
+    <span class="title">OpenSearch</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Module: OpenSearch
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/opensearch/api/utils.rb<span class="defines">,<br />
+  lib/opensearch/api.rb,<br /> lib/opensearch/api/version.rb,<br /> lib/opensearch/api/actions/get.rb,<br /> lib/opensearch/api/actions/bulk.rb,<br /> lib/opensearch/api/actions/info.rb,<br /> lib/opensearch/api/actions/mget.rb,<br /> lib/opensearch/api/actions/ping.rb,<br /> lib/opensearch/api/actions/count.rb,<br /> lib/opensearch/api/actions/index.rb,<br /> lib/opensearch/api/namespace/cat.rb,<br /> lib/opensearch/api/actions/create.rb,<br /> lib/opensearch/api/actions/delete.rb,<br /> lib/opensearch/api/actions/exists.rb,<br /> lib/opensearch/api/actions/scroll.rb,<br /> lib/opensearch/api/actions/search.rb,<br /> lib/opensearch/api/actions/update.rb,<br /> lib/opensearch/api/actions/explain.rb,<br /> lib/opensearch/api/actions/msearch.rb,<br /> lib/opensearch/api/actions/reindex.rb,<br /> lib/opensearch/api/namespace/nodes.rb,<br /> lib/opensearch/api/namespace/tasks.rb,<br /> lib/opensearch/api/actions/cat/help.rb,<br /> lib/opensearch/api/namespace/common.rb,<br /> lib/opensearch/api/namespace/ingest.rb,<br /> lib/opensearch/api/namespace/remote.rb,<br /> lib/opensearch/api/actions/benchmark.rb,<br /> lib/opensearch/api/actions/cat/count.rb,<br /> lib/opensearch/api/actions/cat/nodes.rb,<br /> lib/opensearch/api/actions/cat/tasks.rb,<br /> lib/opensearch/api/actions/rank_eval.rb,<br /> lib/opensearch/api/actions/tasks/get.rb,<br /> lib/opensearch/api/namespace/cluster.rb,<br /> lib/opensearch/api/namespace/indices.rb,<br /> lib/opensearch/api/actions/cat/health.rb,<br /> lib/opensearch/api/actions/cat/master.rb,<br /> lib/opensearch/api/actions/cat/shards.rb,<br /> lib/opensearch/api/actions/field_caps.rb,<br /> lib/opensearch/api/actions/get_script.rb,<br /> lib/opensearch/api/actions/get_source.rb,<br /> lib/opensearch/api/actions/nodes/info.rb,<br /> lib/opensearch/api/actions/put_script.rb,<br /> lib/opensearch/api/actions/tasks/list.rb,<br /> lib/opensearch/api/namespace/features.rb,<br /> lib/opensearch/api/namespace/security.rb,<br /> lib/opensearch/api/namespace/shutdown.rb,<br /> lib/opensearch/api/namespace/snapshot.rb,<br /> lib/opensearch/api/actions/cat/aliases.rb,<br /> lib/opensearch/api/actions/cat/indices.rb,<br /> lib/opensearch/api/actions/cat/plugins.rb,<br /> lib/opensearch/api/actions/indices/get.rb,<br /> lib/opensearch/api/actions/nodes/stats.rb,<br /> lib/opensearch/api/actions/nodes/usage.rb,<br /> lib/opensearch/api/actions/remote/info.rb,<br /> lib/opensearch/api/actions/termvectors.rb,<br /> lib/opensearch/api/actions/cat/recovery.rb,<br /> lib/opensearch/api/actions/cat/segments.rb,<br /> lib/opensearch/api/actions/clear_scroll.rb,<br /> lib/opensearch/api/actions/indices/open.rb,<br /> lib/opensearch/api/actions/mtermvectors.rb,<br /> lib/opensearch/api/actions/snapshot/get.rb,<br /> lib/opensearch/api/actions/tasks/cancel.rb,<br /> lib/opensearch/api/actions/cat/fielddata.rb,<br /> lib/opensearch/api/actions/cat/nodeattrs.rb,<br /> lib/opensearch/api/actions/cat/snapshots.rb,<br /> lib/opensearch/api/actions/cat/templates.rb,<br /> lib/opensearch/api/actions/cluster/state.rb,<br /> lib/opensearch/api/actions/cluster/stats.rb,<br /> lib/opensearch/api/actions/delete_script.rb,<br /> lib/opensearch/api/actions/exists_source.rb,<br /> lib/opensearch/api/actions/indices/clone.rb,<br /> lib/opensearch/api/actions/indices/close.rb,<br /> lib/opensearch/api/actions/indices/flush.rb,<br /> lib/opensearch/api/actions/indices/split.rb,<br /> lib/opensearch/api/actions/indices/stats.rb,<br /> lib/opensearch/api/actions/search_shards.rb,<br /> lib/opensearch/api/actions/cat/allocation.rb,<br /> lib/opensearch/api/actions/cluster/health.rb,<br /> lib/opensearch/api/actions/indices/create.rb,<br /> lib/opensearch/api/actions/indices/delete.rb,<br /> lib/opensearch/api/actions/indices/exists.rb,<br /> lib/opensearch/api/actions/indices/shrink.rb,<br /> lib/opensearch/api/actions/nodes/shutdown.rb,<br /> lib/opensearch/api/actions/snapshot/clone.rb,<br /> lib/opensearch/api/actions/abort_benchmark.rb,<br /> lib/opensearch/api/actions/cat/thread_pool.rb,<br /> lib/opensearch/api/actions/cluster/reroute.rb,<br /> lib/opensearch/api/actions/delete_by_query.rb,<br /> lib/opensearch/api/actions/indices/analyze.rb,<br /> lib/opensearch/api/actions/indices/refresh.rb,<br /> lib/opensearch/api/actions/indices/upgrade.rb,<br /> lib/opensearch/api/actions/ingest/simulate.rb,<br /> lib/opensearch/api/actions/params_registry.rb,<br /> lib/opensearch/api/actions/search_template.rb,<br /> lib/opensearch/api/actions/snapshot/create.rb,<br /> lib/opensearch/api/actions/snapshot/delete.rb,<br /> lib/opensearch/api/actions/snapshot/status.rb,<br /> lib/opensearch/api/actions/update_by_query.rb,<br /> lib/opensearch/api/actions/cat/repositories.rb,<br /> lib/opensearch/api/actions/indices/recovery.rb,<br /> lib/opensearch/api/actions/indices/rollover.rb,<br /> lib/opensearch/api/actions/indices/segments.rb,<br /> lib/opensearch/api/actions/msearch_template.rb,<br /> lib/opensearch/api/actions/snapshot/restore.rb,<br /> lib/opensearch/api/actions/cat/pending_tasks.rb,<br /> lib/opensearch/api/actions/indices/add_block.rb,<br /> lib/opensearch/api/actions/indices/get_alias.rb,<br /> lib/opensearch/api/actions/indices/put_alias.rb,<br /> lib/opensearch/api/actions/nodes/hot_threads.rb,<br /> lib/opensearch/api/actions/shutdown/get_node.rb,<br /> lib/opensearch/api/actions/shutdown/put_node.rb,<br /> lib/opensearch/api/actions/get_script_context.rb,<br /> lib/opensearch/api/actions/indices/disk_usage.rb,<br /> lib/opensearch/api/actions/indices/forcemerge.rb,<br /> lib/opensearch/api/actions/open_point_in_time.rb,<br /> lib/opensearch/api/actions/reindex_rethrottle.rb,<br /> lib/opensearch/api/namespace/dangling_indices.rb,<br /> lib/opensearch/api/actions/cat/cluster_manager.rb,<br /> lib/opensearch/api/actions/cat/params_registry.rb,<br /> lib/opensearch/api/actions/close_point_in_time.rb,<br /> lib/opensearch/api/actions/cluster/remote_info.rb,<br /> lib/opensearch/api/actions/indices/clear_cache.rb,<br /> lib/opensearch/api/actions/indices/get_mapping.rb,<br /> lib/opensearch/api/actions/indices/get_upgrade.rb,<br /> lib/opensearch/api/actions/indices/put_mapping.rb,<br /> lib/opensearch/api/actions/ingest/geo_ip_stats.rb,<br /> lib/opensearch/api/actions/ingest/get_pipeline.rb,<br /> lib/opensearch/api/actions/ingest/put_pipeline.rb,<br /> lib/opensearch/api/actions/cluster/get_settings.rb,<br /> lib/opensearch/api/actions/cluster/put_settings.rb,<br /> lib/opensearch/api/actions/delete_by_rethrottle.rb,<br /> lib/opensearch/api/actions/get_script_languages.rb,<br /> lib/opensearch/api/actions/indices/delete_alias.rb,<br /> lib/opensearch/api/actions/indices/exists_alias.rb,<br /> lib/opensearch/api/actions/indices/get_settings.rb,<br /> lib/opensearch/api/actions/indices/get_template.rb,<br /> lib/opensearch/api/actions/indices/put_settings.rb,<br /> lib/opensearch/api/actions/indices/put_template.rb,<br /> lib/opensearch/api/actions/indices/shard_stores.rb,<br /> lib/opensearch/api/actions/shutdown/delete_node.rb,<br /> lib/opensearch/api/actions/cluster/pending_tasks.rb,<br /> lib/opensearch/api/actions/features/get_features.rb,<br /> lib/opensearch/api/actions/indices/resolve_index.rb,<br /> lib/opensearch/api/actions/ingest/processor_grok.rb,<br /> lib/opensearch/api/actions/nodes/params_registry.rb,<br /> lib/opensearch/api/actions/snapshot/get_features.rb,<br /> lib/opensearch/api/actions/tasks/params_registry.rb,<br /> lib/opensearch/api/actions/indices/update_aliases.rb,<br /> lib/opensearch/api/actions/indices/validate_query.rb,<br /> lib/opensearch/api/actions/ingest/delete_pipeline.rb,<br /> lib/opensearch/api/actions/ingest/params_registry.rb,<br /> lib/opensearch/api/actions/render_search_template.rb,<br /> lib/opensearch/api/actions/cluster/params_registry.rb,<br /> lib/opensearch/api/actions/features/reset_features.rb,<br /> lib/opensearch/api/actions/indices/delete_template.rb,<br /> lib/opensearch/api/actions/indices/exists_template.rb,<br /> lib/opensearch/api/actions/indices/params_registry.rb,<br /> lib/opensearch/api/actions/snapshot/get_repository.rb,<br /> lib/opensearch/api/actions/features/params_registry.rb,<br /> lib/opensearch/api/actions/scripts_painless_execute.rb,<br /> lib/opensearch/api/actions/shutdown/params_registry.rb,<br /> lib/opensearch/api/actions/snapshot/params_registry.rb,<br /> lib/opensearch/api/actions/indices/field_usage_stats.rb,<br /> lib/opensearch/api/actions/indices/get_field_mapping.rb,<br /> lib/opensearch/api/actions/indices/simulate_template.rb,<br /> lib/opensearch/api/actions/cluster/allocation_explain.rb,<br /> lib/opensearch/api/actions/delete_by_query_rethrottle.rb,<br /> lib/opensearch/api/actions/indices/get_index_template.rb,<br /> lib/opensearch/api/actions/indices/put_index_template.rb,<br /> lib/opensearch/api/actions/snapshot/create_repository.rb,<br /> lib/opensearch/api/actions/snapshot/delete_repository.rb,<br /> lib/opensearch/api/actions/snapshot/verify_repository.rb,<br /> lib/opensearch/api/actions/update_by_query_rethrottle.rb,<br /> lib/opensearch/api/actions/snapshot/cleanup_repository.rb,<br /> lib/opensearch/api/actions/snapshot/repository_analyze.rb,<br /> lib/opensearch/api/actions/nodes/reload_secure_settings.rb,<br /> lib/opensearch/api/actions/indices/delete_index_template.rb,<br /> lib/opensearch/api/actions/indices/exists_index_template.rb,<br /> lib/opensearch/api/actions/cluster/get_component_template.rb,<br /> lib/opensearch/api/actions/cluster/put_component_template.rb,<br /> lib/opensearch/api/actions/indices/simulate_index_template.rb,<br /> lib/opensearch/api/actions/dangling_indices/params_registry.rb,<br /> lib/opensearch/api/actions/cluster/delete_component_template.rb,<br /> lib/opensearch/api/actions/cluster/exists_component_template.rb,<br /> lib/opensearch/api/actions/cluster/post_voting_config_exclusions.rb,<br /> lib/opensearch/api/actions/dangling_indices/delete_dangling_index.rb,<br /> lib/opensearch/api/actions/dangling_indices/import_dangling_index.rb,<br /> lib/opensearch/api/actions/dangling_indices/list_dangling_indices.rb,<br /> lib/opensearch/api/actions/cluster/delete_voting_config_exclusions.rb</span>
+</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>SPDX-License-Identifier: Apache-2.0</p>
+
+<p>The OpenSearch Contributors require contributions made to this file be licensed under the Apache-2.0 license or a compatible open source license.</p>
+
+<p>Modifications Copyright OpenSearch Contributors. See GitHub history for details.</p>
+
+<p>Licensed to Elasticsearch B.V. under one or more contributor license agreements. See the NOTICE file distributed with this work for additional information regarding copyright ownership. Elasticsearch B.V. licenses this file to you under the Apache License, Version 2.0 (the “License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_http'>http</span><span class='symbol'>:/</span><span class='op'>/</span><span class='id identifier rubyid_www'>www</span><span class='period'>.</span><span class='id identifier rubyid_apache'>apache</span><span class='period'>.</span><span class='id identifier rubyid_org'>org</span><span class='op'>/</span><span class='id identifier rubyid_licenses'>licenses</span><span class='op'>/</span><span class='const'>LICENSE</span><span class='op'>-</span><span class='float'>2.0</span>
+</code></pre>
+
+<p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the specific language governing permissions and limitations under the License.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="OpenSearch/API.html" title="OpenSearch::API (module)">API</a></span>
+    
+  
+    
+  
+</p>
+
+
+
+
+
+
+
+
+
+</div>
+
+      <div id="footer">
+  Generated on Wed Mar  8 14:43:55 2023 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.28 (ruby-3.1.3).
+</div>
+
+    </div>
+  </body>
+</html>

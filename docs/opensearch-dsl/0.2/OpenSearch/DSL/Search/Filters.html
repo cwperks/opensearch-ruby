@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: OpenSearch::DSL::Search::Filters
+  
+    &mdash; Documentation by YARD 0.9.28
+  
+</title>
+
+  <link rel="stylesheet" href="../../../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../../../css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "OpenSearch::DSL::Search::Filters";
+  relpath = '../../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../../_index.html">Index (F)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../DSL.html" title="OpenSearch::DSL (module)">DSL</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Search.html" title="OpenSearch::DSL::Search (module)">Search</a></span></span>
+     &raquo; 
+    <span class="title">Filters</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Module: OpenSearch::DSL::Search::Filters
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/opensearch/dsl/search/filter.rb<span class="defines">,<br />
+  lib/opensearch/dsl/search/filters/or.rb,<br /> lib/opensearch/dsl/search/filters/and.rb,<br /> lib/opensearch/dsl/search/filters/ids.rb,<br /> lib/opensearch/dsl/search/filters/not.rb,<br /> lib/opensearch/dsl/search/filters/bool.rb,<br /> lib/opensearch/dsl/search/filters/term.rb,<br /> lib/opensearch/dsl/search/filters/type.rb,<br /> lib/opensearch/dsl/search/filters/limit.rb,<br /> lib/opensearch/dsl/search/filters/query.rb,<br /> lib/opensearch/dsl/search/filters/range.rb,<br /> lib/opensearch/dsl/search/filters/terms.rb,<br /> lib/opensearch/dsl/search/filters/exists.rb,<br /> lib/opensearch/dsl/search/filters/nested.rb,<br /> lib/opensearch/dsl/search/filters/prefix.rb,<br /> lib/opensearch/dsl/search/filters/regexp.rb,<br /> lib/opensearch/dsl/search/filters/script.rb,<br /> lib/opensearch/dsl/search/filters/indices.rb,<br /> lib/opensearch/dsl/search/filters/missing.rb,<br /> lib/opensearch/dsl/search/filters/geo_shape.rb,<br /> lib/opensearch/dsl/search/filters/has_child.rb,<br /> lib/opensearch/dsl/search/filters/match_all.rb,<br /> lib/opensearch/dsl/search/filters/has_parent.rb,<br /> lib/opensearch/dsl/search/filters/geo_polygon.rb,<br /> lib/opensearch/dsl/search/filters/geo_distance.rb,<br /> lib/opensearch/dsl/search/filters/geohash_cell.rb,<br /> lib/opensearch/dsl/search/filters/geo_bounding_box.rb,<br /> lib/opensearch/dsl/search/filters/geo_distance_range.rb</span>
+</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Contains the classes for OpenSearch filters</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="Filters/And.html" title="OpenSearch::DSL::Search::Filters::And (class)">And</a></span>, <span class='object_link'><a href="Filters/Bool.html" title="OpenSearch::DSL::Search::Filters::Bool (class)">Bool</a></span>, <span class='object_link'><a href="Filters/Exists.html" title="OpenSearch::DSL::Search::Filters::Exists (class)">Exists</a></span>, <span class='object_link'><a href="Filters/GeoBoundingBox.html" title="OpenSearch::DSL::Search::Filters::GeoBoundingBox (class)">GeoBoundingBox</a></span>, <span class='object_link'><a href="Filters/GeoDistance.html" title="OpenSearch::DSL::Search::Filters::GeoDistance (class)">GeoDistance</a></span>, <span class='object_link'><a href="Filters/GeoDistanceRange.html" title="OpenSearch::DSL::Search::Filters::GeoDistanceRange (class)">GeoDistanceRange</a></span>, <span class='object_link'><a href="Filters/GeoPolygon.html" title="OpenSearch::DSL::Search::Filters::GeoPolygon (class)">GeoPolygon</a></span>, <span class='object_link'><a href="Filters/GeoShape.html" title="OpenSearch::DSL::Search::Filters::GeoShape (class)">GeoShape</a></span>, <span class='object_link'><a href="Filters/GeohashCell.html" title="OpenSearch::DSL::Search::Filters::GeohashCell (class)">GeohashCell</a></span>, <span class='object_link'><a href="Filters/HasChild.html" title="OpenSearch::DSL::Search::Filters::HasChild (class)">HasChild</a></span>, <span class='object_link'><a href="Filters/HasParent.html" title="OpenSearch::DSL::Search::Filters::HasParent (class)">HasParent</a></span>, <span class='object_link'><a href="Filters/Ids.html" title="OpenSearch::DSL::Search::Filters::Ids (class)">Ids</a></span>, <span class='object_link'><a href="Filters/Indices.html" title="OpenSearch::DSL::Search::Filters::Indices (class)">Indices</a></span>, <span class='object_link'><a href="Filters/Limit.html" title="OpenSearch::DSL::Search::Filters::Limit (class)">Limit</a></span>, <span class='object_link'><a href="Filters/MatchAll.html" title="OpenSearch::DSL::Search::Filters::MatchAll (class)">MatchAll</a></span>, <span class='object_link'><a href="Filters/Missing.html" title="OpenSearch::DSL::Search::Filters::Missing (class)">Missing</a></span>, <span class='object_link'><a href="Filters/Nested.html" title="OpenSearch::DSL::Search::Filters::Nested (class)">Nested</a></span>, <span class='object_link'><a href="Filters/Not.html" title="OpenSearch::DSL::Search::Filters::Not (class)">Not</a></span>, <span class='object_link'><a href="Filters/Or.html" title="OpenSearch::DSL::Search::Filters::Or (class)">Or</a></span>, <span class='object_link'><a href="Filters/Prefix.html" title="OpenSearch::DSL::Search::Filters::Prefix (class)">Prefix</a></span>, <span class='object_link'><a href="Filters/Query.html" title="OpenSearch::DSL::Search::Filters::Query (class)">Query</a></span>, <span class='object_link'><a href="Filters/Range.html" title="OpenSearch::DSL::Search::Filters::Range (class)">Range</a></span>, <span class='object_link'><a href="Filters/Regexp.html" title="OpenSearch::DSL::Search::Filters::Regexp (class)">Regexp</a></span>, <span class='object_link'><a href="Filters/Script.html" title="OpenSearch::DSL::Search::Filters::Script (class)">Script</a></span>, <span class='object_link'><a href="Filters/Term.html" title="OpenSearch::DSL::Search::Filters::Term (class)">Term</a></span>, <span class='object_link'><a href="Filters/Terms.html" title="OpenSearch::DSL::Search::Filters::Terms (class)">Terms</a></span>, <span class='object_link'><a href="Filters/Type.html" title="OpenSearch::DSL::Search::Filters::Type (class)">Type</a></span>
+    
+  
+</p>
+
+
+
+
+
+
+
+
+
+</div>
+
+      <div id="footer">
+  Generated on Wed Mar  8 14:43:52 2023 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.28 (ruby-3.1.3).
+</div>
+
+    </div>
+  </body>
+</html>
