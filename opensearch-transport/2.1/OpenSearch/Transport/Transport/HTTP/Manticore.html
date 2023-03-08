@@ -1,0 +1,2805 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: OpenSearch::Transport::Transport::HTTP::Manticore
+  
+    &mdash; Documentation by YARD 0.9.28
+  
+</title>
+
+  <link rel="stylesheet" href="../../../../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../../../../css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "OpenSearch::Transport::Transport::HTTP::Manticore";
+  relpath = '../../../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../../../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../../../_index.html">Index (M)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../../Transport.html" title="OpenSearch::Transport (module)">Transport</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../Transport.html" title="OpenSearch::Transport::Transport (module)">Transport</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../HTTP.html" title="OpenSearch::Transport::Transport::HTTP (module)">HTTP</a></span></span>
+     &raquo; 
+    <span class="title">Manticore</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: OpenSearch::Transport::Transport::HTTP::Manticore
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">OpenSearch::Transport::Transport::HTTP::Manticore</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  <dl>
+      <dt>Includes:</dt>
+      <dd><span class='object_link'><a href="../Base.html" title="OpenSearch::Transport::Transport::Base (module)">Base</a></span></dd>
+  </dl>
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/opensearch/transport/transport/http/manticore.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Alternative HTTP transport implementation for JRuby, using the [<em>Manticore</em>](<a href="https://github.com/cheald/manticore">github.com/cheald/manticore</a>) client,</p>
+
+<pre class="code ruby"><code class="ruby">@example HTTPS (All SSL settings are optional,
+                see http://www.rubydoc.info/gems/manticore/Manticore/Client:initialize)
+
+   require &#39;opensearch/transport/transport/http/manticore&#39;
+
+   client = OpenSearch::Client.new \
+     url: &#39;https://opensearch.example.com&#39;,
+     transport_class: OpenSearch::Transport::Transport::HTTP::Manticore,
+     ssl: {
+       truststore: &#39;/tmp/truststore.jks&#39;,
+       truststore_password: &#39;password&#39;,
+       keystore: &#39;/tmp/keystore.jks&#39;,
+       keystore_password: &#39;secret&#39;,
+     }
+
+   client.transport.connections.first.connection
+   =&gt; #&lt;Manticore::Client:0xdeadbeef ...&gt;
+
+   client.info[&#39;status&#39;]
+   =&gt; 200
+</code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>HTTP</p>
+</div></p>
+      
+      <pre class="example code"><code>
+require &#39;opensearch/transport/transport/http/manticore&#39;
+
+client = OpenSearch::Client.new transport_class: OpenSearch::Transport::Transport::HTTP::Manticore
+
+client.transport.connections.first.connection
+=&gt; #&lt;Manticore::Client:0x56bf7ca6 ...&gt;
+
+client.info[&#39;status&#39;]
+=&gt; 200</code></pre>
+    
+  </div>
+
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="../Base.html" title="OpenSearch::Transport::Transport::Base (module)">Base</a></span></li>
+    
+  </ul>
+
+</div>
+
+
+
+  <h2>Instance Attribute Summary <small><a href="#" class="summary_toggle">collapse</a></small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#connections-instance_method" title="#connections (instance method)">#<strong>connections</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#connections-instance_method" title="OpenSearch::Transport::Transport::Base#connections (method)">Base</a></span>
+    </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute connections.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#counter-instance_method" title="#counter (instance method)">#<strong>counter</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#counter-instance_method" title="OpenSearch::Transport::Transport::Base#counter (method)">Base</a></span>
+    </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute counter.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#hosts-instance_method" title="#hosts (instance method)">#<strong>hosts</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#hosts-instance_method" title="OpenSearch::Transport::Transport::Base#hosts (method)">Base</a></span>
+    </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute hosts.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#last_request_at-instance_method" title="#last_request_at (instance method)">#<strong>last_request_at</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#last_request_at-instance_method" title="OpenSearch::Transport::Transport::Base#last_request_at (method)">Base</a></span>
+    </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute last_request_at.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#logger-instance_method" title="#logger (instance method)">#<strong>logger</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#logger-instance_method" title="OpenSearch::Transport::Transport::Base#logger (method)">Base</a></span>
+    </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute logger.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#options-instance_method" title="#options (instance method)">#<strong>options</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#options-instance_method" title="OpenSearch::Transport::Transport::Base#options (method)">Base</a></span>
+    </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute options.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#protocol-instance_method" title="#protocol (instance method)">#<strong>protocol</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#protocol-instance_method" title="OpenSearch::Transport::Transport::Base#protocol (method)">Base</a></span>
+    </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute protocol.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#reload_after-instance_method" title="#reload_after (instance method)">#<strong>reload_after</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#reload_after-instance_method" title="OpenSearch::Transport::Transport::Base#reload_after (method)">Base</a></span>
+    </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute reload_after.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#reload_connections-instance_method" title="#reload_connections (instance method)">#<strong>reload_connections</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#reload_connections-instance_method" title="OpenSearch::Transport::Transport::Base#reload_connections (method)">Base</a></span>
+    </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute reload_connections.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#resurrect_after-instance_method" title="#resurrect_after (instance method)">#<strong>resurrect_after</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#resurrect_after-instance_method" title="OpenSearch::Transport::Transport::Base#resurrect_after (method)">Base</a></span>
+    </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute resurrect_after.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#serializer-instance_method" title="#serializer (instance method)">#<strong>serializer</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#serializer-instance_method" title="OpenSearch::Transport::Transport::Base#serializer (method)">Base</a></span>
+    </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute serializer.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#sniffer-instance_method" title="#sniffer (instance method)">#<strong>sniffer</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#sniffer-instance_method" title="OpenSearch::Transport::Transport::Base#sniffer (method)">Base</a></span>
+    </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute sniffer.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tracer-instance_method" title="#tracer (instance method)">#<strong>tracer</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#tracer-instance_method" title="OpenSearch::Transport::Transport::Base#tracer (method)">Base</a></span>
+    </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute tracer.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#__build_connection-instance_method" title="#__build_connection (instance method)">#<strong>__build_connection</strong>(host, options = {}, block = nil)  &#x21d2; Connections::Connection </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#__build_connection-instance_method" title="OpenSearch::Transport::Transport::Base#__build_connection (method)">Base</a></span>
+    </span>
+  
+  
+  
+  
+  <span class="abstract note title">abstract</span>
+  
+  <span class="private note title">private</span>
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#__build_connections-instance_method" title="#__build_connections (instance method)">#<strong>__build_connections</strong>  &#x21d2; Connections::Collection </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Builds and returns a collection of connections.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#__close_connections-instance_method" title="#__close_connections (instance method)">#<strong>__close_connections</strong>  &#x21d2; Connections::Collection </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Closes all connections by marking them as dead and closing the underlying HttpClient instances.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#__convert_to_json-instance_method" title="#__convert_to_json (instance method)">#<strong>__convert_to_json</strong>(o = nil, options = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#__convert_to_json-instance_method" title="OpenSearch::Transport::Transport::Base#__convert_to_json (method)">Base</a></span>
+    </span>
+  
+  
+  
+  
+  
+  
+  <span class="private note title">private</span>
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Converts any non-String object to JSON.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#__full_url-instance_method" title="#__full_url (instance method)">#<strong>__full_url</strong>(host)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#__full_url-instance_method" title="OpenSearch::Transport::Transport::Base#__full_url (method)">Base</a></span>
+    </span>
+  
+  
+  
+  
+  
+  
+  <span class="private note title">private</span>
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns a full URL based on information from host.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#__log_response-instance_method" title="#__log_response (instance method)">#<strong>__log_response</strong>(method, path, params, body, url, response, json, took, duration)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#__log_response-instance_method" title="OpenSearch::Transport::Transport::Base#__log_response (method)">Base</a></span>
+    </span>
+  
+  
+  
+  
+  
+  
+  <span class="private note title">private</span>
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Log request and response information.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#__raise_transport_error-instance_method" title="#__raise_transport_error (instance method)">#<strong>__raise_transport_error</strong>(response)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#__raise_transport_error-instance_method" title="OpenSearch::Transport::Transport::Base#__raise_transport_error (method)">Base</a></span>
+    </span>
+  
+  
+  
+  
+  
+  
+  <span class="private note title">private</span>
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Raise error specific for the HTTP response status or a generic server error.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#__rebuild_connections-instance_method" title="#__rebuild_connections (instance method)">#<strong>__rebuild_connections</strong>(arguments = {})  &#x21d2; Connections::Collection </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#__rebuild_connections-instance_method" title="OpenSearch::Transport::Transport::Base#__rebuild_connections (method)">Base</a></span>
+    </span>
+  
+  
+  
+  
+  
+  
+  <span class="private note title">private</span>
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Rebuilds the connections collection in the transport.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#__trace-instance_method" title="#__trace (instance method)">#<strong>__trace</strong>(method, path, params, headers, body, url, response, json, took, duration)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#__trace-instance_method" title="OpenSearch::Transport::Transport::Base#__trace (method)">Base</a></span>
+    </span>
+  
+  
+  
+  
+  
+  
+  <span class="private note title">private</span>
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Trace the request in the ‘curl` format.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#build_client-instance_method" title="#build_client (instance method)">#<strong>build_client</strong>(options = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Should just be run once at startup.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_connection-instance_method" title="#get_connection (instance method)">#<strong>get_connection</strong>(options = {})  &#x21d2; Connections::Connection </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#get_connection-instance_method" title="OpenSearch::Transport::Transport::Base#get_connection (method)">Base</a></span>
+    </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns a connection from the connection pool by delegating to <span class='object_link'><a href="../Connections/Collection.html#get_connection-instance_method" title="OpenSearch::Transport::Transport::Connections::Collection#get_connection (method)">Connections::Collection#get_connection</a></span>.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#host_unreachable_exceptions-instance_method" title="#host_unreachable_exceptions (instance method)">#<strong>host_unreachable_exceptions</strong>  &#x21d2; Array </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns an array of implementation specific connection errors.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(arguments = {}, &amp;block)  &#x21d2; Manticore </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of Manticore.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#log_debug-instance_method" title="#log_debug (instance method)">#<strong>log_debug</strong>(message)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../../../Loggable.html#log_debug-instance_method" title="OpenSearch::Loggable#log_debug (method)">Loggable</a></span>
+    </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Log a debug message.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#log_error-instance_method" title="#log_error (instance method)">#<strong>log_error</strong>(message)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../../../Loggable.html#log_error-instance_method" title="OpenSearch::Loggable#log_error (method)">Loggable</a></span>
+    </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Log an error message.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#log_fatal-instance_method" title="#log_fatal (instance method)">#<strong>log_fatal</strong>(message)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../../../Loggable.html#log_fatal-instance_method" title="OpenSearch::Loggable#log_fatal (method)">Loggable</a></span>
+    </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Log a fatal message.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#log_info-instance_method" title="#log_info (instance method)">#<strong>log_info</strong>(message)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../../../Loggable.html#log_info-instance_method" title="OpenSearch::Loggable#log_info (method)">Loggable</a></span>
+    </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Log an info message.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#log_warn-instance_method" title="#log_warn (instance method)">#<strong>log_warn</strong>(message)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../../../Loggable.html#log_warn-instance_method" title="OpenSearch::Loggable#log_warn (method)">Loggable</a></span>
+    </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Log a warn message.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#perform_request-instance_method" title="#perform_request (instance method)">#<strong>perform_request</strong>(method, path, params = {}, body = nil, headers = nil, opts = {})  &#x21d2; Response </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Performs the request by invoking <span class='object_link'><a href="../Base.html#perform_request-instance_method" title="OpenSearch::Transport::Transport::Base#perform_request (method)">Base#perform_request</a></span> with a block.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#reload_connections!-instance_method" title="#reload_connections! (instance method)">#<strong>reload_connections!</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#reload_connections!-instance_method" title="OpenSearch::Transport::Transport::Base#reload_connections! (method)">Base</a></span>
+    </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Reloads and replaces the connection collection based on cluster information.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#resurrect_dead_connections!-instance_method" title="#resurrect_dead_connections! (instance method)">#<strong>resurrect_dead_connections!</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+    <span class="note title not_defined_here">
+      included
+      from <span class='object_link'><a href="../Base.html#resurrect_dead_connections!-instance_method" title="OpenSearch::Transport::Transport::Base#resurrect_dead_connections! (method)">Base</a></span>
+    </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Tries to “resurrect” all eligible dead connections.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  <div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>(arguments = {}, &amp;block)  &#x21d2; <tt><span class='object_link'><a href="" title="OpenSearch::Transport::Transport::HTTP::Manticore (class)">Manticore</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of Manticore.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+74
+75
+76
+77</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/transport/transport/http/manticore.rb', line 74</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+  <span class='ivar'>@manticore</span> <span class='op'>=</span> <span class='id identifier rubyid_build_client'>build_client</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:options</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='id identifier rubyid_block'>block</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id=""></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="connections-instance_method">
+  
+    #<strong>connections</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#connections-instance_method" title="OpenSearch::Transport::Transport::Base#connections (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute connections.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="counter-instance_method">
+  
+    #<strong>counter</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#counter-instance_method" title="OpenSearch::Transport::Transport::Base#counter (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute counter.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="hosts-instance_method">
+  
+    #<strong>hosts</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#hosts-instance_method" title="OpenSearch::Transport::Transport::Base#hosts (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute hosts.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="last_request_at-instance_method">
+  
+    #<strong>last_request_at</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#last_request_at-instance_method" title="OpenSearch::Transport::Transport::Base#last_request_at (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute last_request_at.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      
+      <span id="logger=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="logger-instance_method">
+  
+    #<strong>logger</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#logger-instance_method" title="OpenSearch::Transport::Transport::Base#logger (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute logger.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="options-instance_method">
+  
+    #<strong>options</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#options-instance_method" title="OpenSearch::Transport::Transport::Base#options (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute options.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="protocol-instance_method">
+  
+    #<strong>protocol</strong>  &#x21d2; <tt>Object</tt>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#protocol-instance_method" title="OpenSearch::Transport::Transport::Base#protocol (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute protocol.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      
+      <span id="reload_after=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="reload_after-instance_method">
+  
+    #<strong>reload_after</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#reload_after-instance_method" title="OpenSearch::Transport::Transport::Base#reload_after (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute reload_after.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      
+      <span id="reload_connections=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="reload_connections-instance_method">
+  
+    #<strong>reload_connections</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#reload_connections-instance_method" title="OpenSearch::Transport::Transport::Base#reload_connections (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute reload_connections.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      
+      <span id="resurrect_after=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="resurrect_after-instance_method">
+  
+    #<strong>resurrect_after</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#resurrect_after-instance_method" title="OpenSearch::Transport::Transport::Base#resurrect_after (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute resurrect_after.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      
+      <span id="serializer=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="serializer-instance_method">
+  
+    #<strong>serializer</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#serializer-instance_method" title="OpenSearch::Transport::Transport::Base#serializer (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute serializer.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      
+      <span id="sniffer=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="sniffer-instance_method">
+  
+    #<strong>sniffer</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#sniffer-instance_method" title="OpenSearch::Transport::Transport::Base#sniffer (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute sniffer.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      
+      <span id="tracer=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="tracer-instance_method">
+  
+    #<strong>tracer</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#tracer-instance_method" title="OpenSearch::Transport::Transport::Base#tracer (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute tracer.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+  </div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="__build_connection-instance_method">
+  
+    #<strong>__build_connection</strong>(host, options = {}, block = nil)  &#x21d2; <tt><span class='object_link'><a href="../Connections/Connection.html" title="OpenSearch::Transport::Transport::Connections::Connection (class)">Connections::Connection</a></span></tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#__build_connection-instance_method" title="OpenSearch::Transport::Transport::Base#__build_connection (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note private">
+  <strong>This method is part of a private API.</strong>
+  You should avoid using this method if possible, as it may be removed or be changed in the future.
+</p>
+<div class="note abstract">
+  <strong>This method is abstract.</strong>
+  <div class='inline'>
+<p>Build and return a connection. A transport implementation <strong>must</strong> implement this method. See <span class='object_link'><a href="Faraday.html#__build_connection-instance_method" title="OpenSearch::Transport::Transport::HTTP::Faraday#__build_connection (method)">HTTP::Faraday#__build_connection</a></span> for an example.</p>
+</div>
+</div>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Connections/Connection.html" title="OpenSearch::Transport::Transport::Connections::Connection (class)">Connections::Connection</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NoMethodError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="__build_connections-instance_method">
+  
+    #<strong>__build_connections</strong>  &#x21d2; <tt><span class='object_link'><a href="../Connections/Collection.html" title="OpenSearch::Transport::Transport::Connections::Collection (class)">Connections::Collection</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Builds and returns a collection of connections. Each connection is a Manticore::Client</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Connections/Collection.html" title="OpenSearch::Transport::Transport::Connections::Collection (class)">Connections::Collection</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/transport/transport/http/manticore.rb', line 120</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid___build_connections'>__build_connections</span>
+  <span class='ivar'>@request_options</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_apply_headers'>apply_headers</span><span class='lparen'>(</span><span class='ivar'>@request_options</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:transport_options</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_apply_headers'>apply_headers</span><span class='lparen'>(</span><span class='ivar'>@request_options</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+
+  <span class='const'><span class='object_link'><a href="../Connections.html" title="OpenSearch::Transport::Transport::Connections (module)">Connections</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Connections/Collection.html" title="OpenSearch::Transport::Transport::Connections::Collection (class)">Collection</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="../Connections/Collection.html#initialize-instance_method" title="OpenSearch::Transport::Transport::Connections::Collection#initialize (method)">new</a></span></span> \
+    <span class='symbol'>:connections</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_hosts'>hosts</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_host'>host</span><span class='op'>|</span>
+      <span class='id identifier rubyid_host'>host</span><span class='lbracket'>[</span><span class='symbol'>:protocol</span><span class='rbracket'>]</span>   <span class='op'>=</span> <span class='id identifier rubyid_host'>host</span><span class='lbracket'>[</span><span class='symbol'>:scheme</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='const'><span class='object_link'><a href="../Base.html#DEFAULT_PROTOCOL-constant" title="OpenSearch::Transport::Transport::Base::DEFAULT_PROTOCOL (constant)">DEFAULT_PROTOCOL</a></span></span>
+      <span class='id identifier rubyid_host'>host</span><span class='lbracket'>[</span><span class='symbol'>:port</span><span class='rbracket'>]</span>     <span class='op'>||=</span> <span class='const'><span class='object_link'><a href="../Base.html#DEFAULT_PORT-constant" title="OpenSearch::Transport::Transport::Base::DEFAULT_PORT (constant)">DEFAULT_PORT</a></span></span>
+
+      <span class='id identifier rubyid_host'>host</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:user</span><span class='rparen'>)</span>     <span class='comment'># auth is not supported here.
+</span>      <span class='id identifier rubyid_host'>host</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:password</span><span class='rparen'>)</span> <span class='comment'># use the headers
+</span>
+      <span class='const'><span class='object_link'><a href="../Connections.html" title="OpenSearch::Transport::Transport::Connections (module)">Connections</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../Connections/Connection.html" title="OpenSearch::Transport::Transport::Connections::Connection (class)">Connection</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="../Connections/Connection.html#initialize-instance_method" title="OpenSearch::Transport::Transport::Connections::Connection#initialize (method)">new</a></span></span> \
+        <span class='symbol'>:host</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_host'>host</span><span class='comma'>,</span>
+        <span class='symbol'>:connection</span> <span class='op'>=&gt;</span> <span class='ivar'>@manticore</span>
+    <span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='symbol'>:selector_class</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:selector_class</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='symbol'>:selector</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:selector</span><span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="__close_connections-instance_method">
+  
+    #<strong>__close_connections</strong>  &#x21d2; <tt><span class='object_link'><a href="../Connections/Collection.html" title="OpenSearch::Transport::Transport::Connections::Collection (class)">Connections::Collection</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Closes all connections by marking them as dead and closing the underlying HttpClient instances</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Connections/Collection.html" title="OpenSearch::Transport::Transport::Connections::Collection (class)">Connections::Collection</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+146
+147
+148
+149</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/transport/transport/http/manticore.rb', line 146</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid___close_connections'>__close_connections</span>
+  <span class='comment'># The Manticore adapter uses a single long-lived instance
+</span>  <span class='comment'># of Manticore::Client, so we don&#39;t close the connections.
+</span><span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="__convert_to_json-instance_method">
+  
+    #<strong>__convert_to_json</strong>(o = nil, options = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#__convert_to_json-instance_method" title="OpenSearch::Transport::Transport::Base#__convert_to_json (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note private">
+  <strong>This method is part of a private API.</strong>
+  You should avoid using this method if possible, as it may be removed or be changed in the future.
+</p>
+
+<p>Converts any non-String object to JSON</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="__full_url-instance_method">
+  
+    #<strong>__full_url</strong>(host)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#__full_url-instance_method" title="OpenSearch::Transport::Transport::Base#__full_url (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note private">
+  <strong>This method is part of a private API.</strong>
+  You should avoid using this method if possible, as it may be removed or be changed in the future.
+</p>
+
+<p>Returns a full URL based on information from host</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>host</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Host configuration passed in from <span class='object_link'><a href="../../Client.html" title="OpenSearch::Transport::Client (class)">Client</a></span></p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="__log_response-instance_method">
+  
+    #<strong>__log_response</strong>(method, path, params, body, url, response, json, took, duration)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#__log_response-instance_method" title="OpenSearch::Transport::Transport::Base#__log_response (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note private">
+  <strong>This method is part of a private API.</strong>
+  You should avoid using this method if possible, as it may be removed or be changed in the future.
+</p>
+
+<p>Log request and response information</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="__raise_transport_error-instance_method">
+  
+    #<strong>__raise_transport_error</strong>(response)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#__raise_transport_error-instance_method" title="OpenSearch::Transport::Transport::Base#__raise_transport_error (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note private">
+  <strong>This method is part of a private API.</strong>
+  You should avoid using this method if possible, as it may be removed or be changed in the future.
+</p>
+
+<p>Raise error specific for the HTTP response status or a generic server error</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="__rebuild_connections-instance_method">
+  
+    #<strong>__rebuild_connections</strong>(arguments = {})  &#x21d2; <tt><span class='object_link'><a href="../Connections/Collection.html" title="OpenSearch::Transport::Transport::Connections::Collection (class)">Connections::Collection</a></span></tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#__rebuild_connections-instance_method" title="OpenSearch::Transport::Transport::Base#__rebuild_connections (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note private">
+  <strong>This method is part of a private API.</strong>
+  You should avoid using this method if possible, as it may be removed or be changed in the future.
+</p>
+
+<p>Rebuilds the connections collection in the transport.</p>
+
+<p>The methods <strong>adds</strong> new connections from the passed hosts to the collection, and <strong>removes</strong> all connections not contained in the passed hosts.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Connections/Collection.html" title="OpenSearch::Transport::Transport::Connections::Collection (class)">Connections::Collection</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="__trace-instance_method">
+  
+    #<strong>__trace</strong>(method, path, params, headers, body, url, response, json, took, duration)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#__trace-instance_method" title="OpenSearch::Transport::Transport::Base#__trace (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p class="note private">
+  <strong>This method is part of a private API.</strong>
+  You should avoid using this method if possible, as it may be removed or be changed in the future.
+</p>
+
+<p>Trace the request in the ‘curl` format</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="build_client-instance_method">
+  
+    #<strong>build_client</strong>(options = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Should just be run once at startup</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+80
+81
+82
+83
+84
+85</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/transport/transport/http/manticore.rb', line 80</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_build_client'>build_client</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_client_options'>client_options</span> <span class='op'>=</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:transport_options</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_client_options'>client_options</span><span class='lbracket'>[</span><span class='symbol'>:ssl</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:ssl</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='ivar'>@manticore</span> <span class='op'>=</span> <span class='op'>::</span><span class='const'>Manticore</span><span class='op'>::</span><span class='const'>Client</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_client_options'>client_options</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_connection-instance_method">
+  
+    #<strong>get_connection</strong>(options = {})  &#x21d2; <tt><span class='object_link'><a href="../Connections/Connection.html" title="OpenSearch::Transport::Transport::Connections::Connection (class)">Connections::Connection</a></span></tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#get_connection-instance_method" title="OpenSearch::Transport::Transport::Base#get_connection (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a connection from the connection pool by delegating to <span class='object_link'><a href="../Connections/Collection.html#get_connection-instance_method" title="OpenSearch::Transport::Transport::Connections::Collection#get_connection (method)">Connections::Collection#get_connection</a></span>.</p>
+
+<p>Resurrects dead connection if the ‘resurrect_after` timeout has passed. Increments the counter and performs connection reloading if the `reload_connections` option is set.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Connections/Connection.html" title="OpenSearch::Transport::Transport::Connections::Connection (class)">Connections::Connection</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="../Connections/Collection.html#get_connection-instance_method" title="OpenSearch::Transport::Transport::Connections::Collection#get_connection (method)">Connections::Collection#get_connection</a></span></li>
+    
+  </ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="host_unreachable_exceptions-instance_method">
+  
+    #<strong>host_unreachable_exceptions</strong>  &#x21d2; <tt>Array</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns an array of implementation specific connection errors.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+155
+156
+157
+158
+159
+160
+161
+162</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/transport/transport/http/manticore.rb', line 155</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_host_unreachable_exceptions'>host_unreachable_exceptions</span>
+  <span class='lbracket'>[</span>
+    <span class='op'>::</span><span class='const'>Manticore</span><span class='op'>::</span><span class='const'>Timeout</span><span class='comma'>,</span>
+    <span class='op'>::</span><span class='const'>Manticore</span><span class='op'>::</span><span class='const'>SocketException</span><span class='comma'>,</span>
+    <span class='op'>::</span><span class='const'>Manticore</span><span class='op'>::</span><span class='const'>ClientProtocolException</span><span class='comma'>,</span>
+    <span class='op'>::</span><span class='const'>Manticore</span><span class='op'>::</span><span class='const'>ResolutionFailure</span>
+  <span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="log_debug-instance_method">
+  
+    #<strong>log_debug</strong>(message)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../../../Loggable.html#log_debug-instance_method" title="OpenSearch::Loggable#log_debug (method)">Loggable</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Log a debug message.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Log a debug message.</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_log_debug'>log_debug</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Message</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>message</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The message to log.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>7.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="log_error-instance_method">
+  
+    #<strong>log_error</strong>(message)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../../../Loggable.html#log_error-instance_method" title="OpenSearch::Loggable#log_error (method)">Loggable</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Log an error message.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Log an error message.</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_log_error'>log_error</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Message</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>message</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The message to log.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>7.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="log_fatal-instance_method">
+  
+    #<strong>log_fatal</strong>(message)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../../../Loggable.html#log_fatal-instance_method" title="OpenSearch::Loggable#log_fatal (method)">Loggable</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Log a fatal message.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Log a fatal message.</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_log_fatal'>log_fatal</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Message</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>message</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The message to log.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>7.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="log_info-instance_method">
+  
+    #<strong>log_info</strong>(message)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../../../Loggable.html#log_info-instance_method" title="OpenSearch::Loggable#log_info (method)">Loggable</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Log an info message.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Log an info message.</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_log_info'>log_info</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Message</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>message</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The message to log.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>7.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="log_warn-instance_method">
+  
+    #<strong>log_warn</strong>(message)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../../../Loggable.html#log_warn-instance_method" title="OpenSearch::Loggable#log_warn (method)">Loggable</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Log a warn message.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Log a warn message.</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_log_warn'>log_warn</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Message</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>message</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The message to log.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Since:</p>
+<ul class="since">
+  
+    <li>
+      
+      
+      
+      
+        
+        <div class='inline'>
+<p>7.0.0</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="perform_request-instance_method">
+  
+    #<strong>perform_request</strong>(method, path, params = {}, body = nil, headers = nil, opts = {})  &#x21d2; <tt><span class='object_link'><a href="../Response.html" title="OpenSearch::Transport::Transport::Response (class)">Response</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Performs the request by invoking <span class='object_link'><a href="../Base.html#perform_request-instance_method" title="OpenSearch::Transport::Transport::Base#perform_request (method)">Base#perform_request</a></span> with a block.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../Response.html" title="OpenSearch::Transport::Transport::Response (class)">Response</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="../Base.html#perform_request-instance_method" title="OpenSearch::Transport::Transport::Base#perform_request (method)">Base#perform_request</a></span></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/transport/transport/http/manticore.rb', line 92</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='op'>=</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_opts'>opts</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='kw'>super</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_connection'>connection</span><span class='comma'>,</span> <span class='id identifier rubyid_url'>url</span><span class='op'>|</span>
+    <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:body</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid___convert_to_json'>__convert_to_json</span><span class='lparen'>(</span><span class='id identifier rubyid_body'>body</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_body'>body</span>
+    <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:headers</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_headers'>headers</span> <span class='kw'>if</span> <span class='id identifier rubyid_headers'>headers</span>
+    <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span> <span class='ivar'>@request_options</span>
+    <span class='kw'>case</span> <span class='id identifier rubyid_method'>method</span>
+    <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>GET</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_resp'>resp</span> <span class='op'>=</span> <span class='id identifier rubyid_connection'>connection</span><span class='period'>.</span><span class='id identifier rubyid_connection'>connection</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
+    <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>HEAD</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_resp'>resp</span> <span class='op'>=</span> <span class='id identifier rubyid_connection'>connection</span><span class='period'>.</span><span class='id identifier rubyid_connection'>connection</span><span class='period'>.</span><span class='id identifier rubyid_head'>head</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
+    <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>PUT</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_resp'>resp</span> <span class='op'>=</span> <span class='id identifier rubyid_connection'>connection</span><span class='period'>.</span><span class='id identifier rubyid_connection'>connection</span><span class='period'>.</span><span class='id identifier rubyid_put'>put</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
+    <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>POST</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_resp'>resp</span> <span class='op'>=</span> <span class='id identifier rubyid_connection'>connection</span><span class='period'>.</span><span class='id identifier rubyid_connection'>connection</span><span class='period'>.</span><span class='id identifier rubyid_post'>post</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
+    <span class='kw'>when</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DELETE</span><span class='tstring_end'>&quot;</span></span>
+      <span class='id identifier rubyid_resp'>resp</span> <span class='op'>=</span> <span class='id identifier rubyid_connection'>connection</span><span class='period'>.</span><span class='id identifier rubyid_connection'>connection</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
+    <span class='kw'>else</span>
+      <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Method </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_method'>method</span><span class='embexpr_end'>}</span><span class='tstring_content'> not supported</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>end</span>
+    <span class='const'><span class='object_link'><a href="../Response.html" title="OpenSearch::Transport::Transport::Response (class)">Response</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="../Response.html#initialize-instance_method" title="OpenSearch::Transport::Transport::Response#initialize (method)">new</a></span></span> <span class='id identifier rubyid_resp'>resp</span><span class='period'>.</span><span class='id identifier rubyid_code'>code</span><span class='comma'>,</span> <span class='id identifier rubyid_resp'>resp</span><span class='period'>.</span><span class='id identifier rubyid_read_body'>read_body</span><span class='comma'>,</span> <span class='id identifier rubyid_resp'>resp</span><span class='period'>.</span><span class='id identifier rubyid_headers'>headers</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="reload_connections!-instance_method">
+  
+    #<strong>reload_connections!</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#reload_connections!-instance_method" title="OpenSearch::Transport::Transport::Base#reload_connections! (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Reloads and replaces the connection collection based on cluster information</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="../Sniffer.html#hosts-instance_method" title="OpenSearch::Transport::Transport::Sniffer#hosts (method)">Sniffer#hosts</a></span></li>
+    
+  </ul>
+
+</div>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="resurrect_dead_connections!-instance_method">
+  
+    #<strong>resurrect_dead_connections!</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+    <span class="not_defined_here">
+      Originally defined in module
+        <span class='object_link'><a href="../Base.html#resurrect_dead_connections!-instance_method" title="OpenSearch::Transport::Transport::Base#resurrect_dead_connections! (method)">Base</a></span>
+    </span>
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Tries to “resurrect” all eligible dead connections</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="../Connections/Connection.html#resurrect!-instance_method" title="OpenSearch::Transport::Transport::Connections::Connection#resurrect! (method)">Connections::Connection#resurrect!</a></span></li>
+    
+  </ul>
+
+</div>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Wed Mar  8 14:44:01 2023 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.28 (ruby-3.1.3).
+</div>
+
+    </div>
+  </body>
+</html>

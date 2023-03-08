@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: OpenSearch::API
+  
+    &mdash; Documentation by YARD 0.9.28
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "OpenSearch::API";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (A)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span>
+     &raquo; 
+    <span class="title">API</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Module: OpenSearch::API
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/opensearch/api.rb<span class="defines">,<br />
+  lib/opensearch/api/utils.rb,<br /> lib/opensearch/api/version.rb,<br /> lib/opensearch/api/actions/get.rb,<br /> lib/opensearch/api/actions/bulk.rb,<br /> lib/opensearch/api/actions/info.rb,<br /> lib/opensearch/api/actions/mget.rb,<br /> lib/opensearch/api/actions/ping.rb,<br /> lib/opensearch/api/actions/count.rb,<br /> lib/opensearch/api/actions/index.rb,<br /> lib/opensearch/api/namespace/cat.rb,<br /> lib/opensearch/api/actions/create.rb,<br /> lib/opensearch/api/actions/delete.rb,<br /> lib/opensearch/api/actions/exists.rb,<br /> lib/opensearch/api/actions/scroll.rb,<br /> lib/opensearch/api/actions/search.rb,<br /> lib/opensearch/api/actions/update.rb,<br /> lib/opensearch/api/actions/explain.rb,<br /> lib/opensearch/api/actions/msearch.rb,<br /> lib/opensearch/api/actions/reindex.rb,<br /> lib/opensearch/api/namespace/nodes.rb,<br /> lib/opensearch/api/namespace/tasks.rb,<br /> lib/opensearch/api/actions/cat/help.rb,<br /> lib/opensearch/api/namespace/common.rb,<br /> lib/opensearch/api/namespace/ingest.rb,<br /> lib/opensearch/api/namespace/remote.rb,<br /> lib/opensearch/api/actions/benchmark.rb,<br /> lib/opensearch/api/actions/cat/count.rb,<br /> lib/opensearch/api/actions/cat/nodes.rb,<br /> lib/opensearch/api/actions/cat/tasks.rb,<br /> lib/opensearch/api/actions/rank_eval.rb,<br /> lib/opensearch/api/actions/tasks/get.rb,<br /> lib/opensearch/api/namespace/cluster.rb,<br /> lib/opensearch/api/namespace/indices.rb,<br /> lib/opensearch/api/actions/cat/health.rb,<br /> lib/opensearch/api/actions/cat/master.rb,<br /> lib/opensearch/api/actions/cat/shards.rb,<br /> lib/opensearch/api/actions/field_caps.rb,<br /> lib/opensearch/api/actions/get_script.rb,<br /> lib/opensearch/api/actions/get_source.rb,<br /> lib/opensearch/api/actions/nodes/info.rb,<br /> lib/opensearch/api/actions/put_script.rb,<br /> lib/opensearch/api/actions/tasks/list.rb,<br /> lib/opensearch/api/namespace/features.rb,<br /> lib/opensearch/api/namespace/security.rb,<br /> lib/opensearch/api/namespace/shutdown.rb,<br /> lib/opensearch/api/namespace/snapshot.rb,<br /> lib/opensearch/api/actions/cat/aliases.rb,<br /> lib/opensearch/api/actions/cat/indices.rb,<br /> lib/opensearch/api/actions/cat/plugins.rb,<br /> lib/opensearch/api/actions/indices/get.rb,<br /> lib/opensearch/api/actions/nodes/stats.rb,<br /> lib/opensearch/api/actions/nodes/usage.rb,<br /> lib/opensearch/api/actions/remote/info.rb,<br /> lib/opensearch/api/actions/termvectors.rb,<br /> lib/opensearch/api/actions/cat/recovery.rb,<br /> lib/opensearch/api/actions/cat/segments.rb,<br /> lib/opensearch/api/actions/clear_scroll.rb,<br /> lib/opensearch/api/actions/indices/open.rb,<br /> lib/opensearch/api/actions/mtermvectors.rb,<br /> lib/opensearch/api/actions/snapshot/get.rb,<br /> lib/opensearch/api/actions/tasks/cancel.rb,<br /> lib/opensearch/api/actions/cat/fielddata.rb,<br /> lib/opensearch/api/actions/cat/nodeattrs.rb,<br /> lib/opensearch/api/actions/cat/snapshots.rb,<br /> lib/opensearch/api/actions/cat/templates.rb,<br /> lib/opensearch/api/actions/cluster/state.rb,<br /> lib/opensearch/api/actions/cluster/stats.rb,<br /> lib/opensearch/api/actions/delete_script.rb,<br /> lib/opensearch/api/actions/exists_source.rb,<br /> lib/opensearch/api/actions/indices/clone.rb,<br /> lib/opensearch/api/actions/indices/close.rb,<br /> lib/opensearch/api/actions/indices/flush.rb,<br /> lib/opensearch/api/actions/indices/split.rb,<br /> lib/opensearch/api/actions/indices/stats.rb,<br /> lib/opensearch/api/actions/search_shards.rb,<br /> lib/opensearch/api/actions/cat/allocation.rb,<br /> lib/opensearch/api/actions/cluster/health.rb,<br /> lib/opensearch/api/actions/indices/create.rb,<br /> lib/opensearch/api/actions/indices/delete.rb,<br /> lib/opensearch/api/actions/indices/exists.rb,<br /> lib/opensearch/api/actions/indices/shrink.rb,<br /> lib/opensearch/api/actions/nodes/shutdown.rb,<br /> lib/opensearch/api/actions/snapshot/clone.rb,<br /> lib/opensearch/api/actions/abort_benchmark.rb,<br /> lib/opensearch/api/actions/cat/thread_pool.rb,<br /> lib/opensearch/api/actions/cluster/reroute.rb,<br /> lib/opensearch/api/actions/delete_by_query.rb,<br /> lib/opensearch/api/actions/indices/analyze.rb,<br /> lib/opensearch/api/actions/indices/refresh.rb,<br /> lib/opensearch/api/actions/indices/upgrade.rb,<br /> lib/opensearch/api/actions/ingest/simulate.rb,<br /> lib/opensearch/api/actions/params_registry.rb,<br /> lib/opensearch/api/actions/search_template.rb,<br /> lib/opensearch/api/actions/snapshot/create.rb,<br /> lib/opensearch/api/actions/snapshot/delete.rb,<br /> lib/opensearch/api/actions/snapshot/status.rb,<br /> lib/opensearch/api/actions/update_by_query.rb,<br /> lib/opensearch/api/actions/cat/repositories.rb,<br /> lib/opensearch/api/actions/indices/recovery.rb,<br /> lib/opensearch/api/actions/indices/rollover.rb,<br /> lib/opensearch/api/actions/indices/segments.rb,<br /> lib/opensearch/api/actions/msearch_template.rb,<br /> lib/opensearch/api/actions/snapshot/restore.rb,<br /> lib/opensearch/api/actions/cat/pending_tasks.rb,<br /> lib/opensearch/api/actions/indices/add_block.rb,<br /> lib/opensearch/api/actions/indices/get_alias.rb,<br /> lib/opensearch/api/actions/indices/put_alias.rb,<br /> lib/opensearch/api/actions/nodes/hot_threads.rb,<br /> lib/opensearch/api/actions/shutdown/get_node.rb,<br /> lib/opensearch/api/actions/shutdown/put_node.rb,<br /> lib/opensearch/api/actions/get_script_context.rb,<br /> lib/opensearch/api/actions/indices/disk_usage.rb,<br /> lib/opensearch/api/actions/indices/forcemerge.rb,<br /> lib/opensearch/api/actions/open_point_in_time.rb,<br /> lib/opensearch/api/actions/reindex_rethrottle.rb,<br /> lib/opensearch/api/namespace/dangling_indices.rb,<br /> lib/opensearch/api/actions/cat/cluster_manager.rb,<br /> lib/opensearch/api/actions/cat/params_registry.rb,<br /> lib/opensearch/api/actions/close_point_in_time.rb,<br /> lib/opensearch/api/actions/cluster/remote_info.rb,<br /> lib/opensearch/api/actions/indices/clear_cache.rb,<br /> lib/opensearch/api/actions/indices/get_mapping.rb,<br /> lib/opensearch/api/actions/indices/get_upgrade.rb,<br /> lib/opensearch/api/actions/indices/put_mapping.rb,<br /> lib/opensearch/api/actions/ingest/geo_ip_stats.rb,<br /> lib/opensearch/api/actions/ingest/get_pipeline.rb,<br /> lib/opensearch/api/actions/ingest/put_pipeline.rb,<br /> lib/opensearch/api/actions/cluster/get_settings.rb,<br /> lib/opensearch/api/actions/cluster/put_settings.rb,<br /> lib/opensearch/api/actions/delete_by_rethrottle.rb,<br /> lib/opensearch/api/actions/get_script_languages.rb,<br /> lib/opensearch/api/actions/indices/delete_alias.rb,<br /> lib/opensearch/api/actions/indices/exists_alias.rb,<br /> lib/opensearch/api/actions/indices/get_settings.rb,<br /> lib/opensearch/api/actions/indices/get_template.rb,<br /> lib/opensearch/api/actions/indices/put_settings.rb,<br /> lib/opensearch/api/actions/indices/put_template.rb,<br /> lib/opensearch/api/actions/indices/shard_stores.rb,<br /> lib/opensearch/api/actions/shutdown/delete_node.rb,<br /> lib/opensearch/api/actions/cluster/pending_tasks.rb,<br /> lib/opensearch/api/actions/features/get_features.rb,<br /> lib/opensearch/api/actions/indices/resolve_index.rb,<br /> lib/opensearch/api/actions/ingest/processor_grok.rb,<br /> lib/opensearch/api/actions/nodes/params_registry.rb,<br /> lib/opensearch/api/actions/snapshot/get_features.rb,<br /> lib/opensearch/api/actions/tasks/params_registry.rb,<br /> lib/opensearch/api/actions/indices/update_aliases.rb,<br /> lib/opensearch/api/actions/indices/validate_query.rb,<br /> lib/opensearch/api/actions/ingest/delete_pipeline.rb,<br /> lib/opensearch/api/actions/ingest/params_registry.rb,<br /> lib/opensearch/api/actions/render_search_template.rb,<br /> lib/opensearch/api/actions/cluster/params_registry.rb,<br /> lib/opensearch/api/actions/features/reset_features.rb,<br /> lib/opensearch/api/actions/indices/delete_template.rb,<br /> lib/opensearch/api/actions/indices/exists_template.rb,<br /> lib/opensearch/api/actions/indices/params_registry.rb,<br /> lib/opensearch/api/actions/snapshot/get_repository.rb,<br /> lib/opensearch/api/actions/features/params_registry.rb,<br /> lib/opensearch/api/actions/scripts_painless_execute.rb,<br /> lib/opensearch/api/actions/shutdown/params_registry.rb,<br /> lib/opensearch/api/actions/snapshot/params_registry.rb,<br /> lib/opensearch/api/actions/indices/field_usage_stats.rb,<br /> lib/opensearch/api/actions/indices/get_field_mapping.rb,<br /> lib/opensearch/api/actions/indices/simulate_template.rb,<br /> lib/opensearch/api/actions/cluster/allocation_explain.rb,<br /> lib/opensearch/api/actions/delete_by_query_rethrottle.rb,<br /> lib/opensearch/api/actions/indices/get_index_template.rb,<br /> lib/opensearch/api/actions/indices/put_index_template.rb,<br /> lib/opensearch/api/actions/snapshot/create_repository.rb,<br /> lib/opensearch/api/actions/snapshot/delete_repository.rb,<br /> lib/opensearch/api/actions/snapshot/verify_repository.rb,<br /> lib/opensearch/api/actions/update_by_query_rethrottle.rb,<br /> lib/opensearch/api/actions/snapshot/cleanup_repository.rb,<br /> lib/opensearch/api/actions/snapshot/repository_analyze.rb,<br /> lib/opensearch/api/actions/nodes/reload_secure_settings.rb,<br /> lib/opensearch/api/actions/indices/delete_index_template.rb,<br /> lib/opensearch/api/actions/indices/exists_index_template.rb,<br /> lib/opensearch/api/actions/cluster/get_component_template.rb,<br /> lib/opensearch/api/actions/cluster/put_component_template.rb,<br /> lib/opensearch/api/actions/indices/simulate_index_template.rb,<br /> lib/opensearch/api/actions/dangling_indices/params_registry.rb,<br /> lib/opensearch/api/actions/cluster/delete_component_template.rb,<br /> lib/opensearch/api/actions/cluster/exists_component_template.rb,<br /> lib/opensearch/api/actions/cluster/post_voting_config_exclusions.rb,<br /> lib/opensearch/api/actions/dangling_indices/delete_dangling_index.rb,<br /> lib/opensearch/api/actions/dangling_indices/import_dangling_index.rb,<br /> lib/opensearch/api/actions/dangling_indices/list_dangling_indices.rb,<br /> lib/opensearch/api/actions/cluster/delete_voting_config_exclusions.rb</span>
+</dd>
+  </dl>
+  
+</div>
+
+<h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="API/Actions.html" title="OpenSearch::API::Actions (module)">Actions</a></span>, <span class='object_link'><a href="API/Cat.html" title="OpenSearch::API::Cat (module)">Cat</a></span>, <span class='object_link'><a href="API/Cluster.html" title="OpenSearch::API::Cluster (module)">Cluster</a></span>, <span class='object_link'><a href="API/Common.html" title="OpenSearch::API::Common (module)">Common</a></span>, <span class='object_link'><a href="API/DanglingIndices.html" title="OpenSearch::API::DanglingIndices (module)">DanglingIndices</a></span>, <span class='object_link'><a href="API/Features.html" title="OpenSearch::API::Features (module)">Features</a></span>, <span class='object_link'><a href="API/Indices.html" title="OpenSearch::API::Indices (module)">Indices</a></span>, <span class='object_link'><a href="API/Ingest.html" title="OpenSearch::API::Ingest (module)">Ingest</a></span>, <span class='object_link'><a href="API/Nodes.html" title="OpenSearch::API::Nodes (module)">Nodes</a></span>, <span class='object_link'><a href="API/Remote.html" title="OpenSearch::API::Remote (module)">Remote</a></span>, <span class='object_link'><a href="API/Security.html" title="OpenSearch::API::Security (module)">Security</a></span>, <span class='object_link'><a href="API/Shutdown.html" title="OpenSearch::API::Shutdown (module)">Shutdown</a></span>, <span class='object_link'><a href="API/Snapshot.html" title="OpenSearch::API::Snapshot (module)">Snapshot</a></span>, <span class='object_link'><a href="API/Tasks.html" title="OpenSearch::API::Tasks (module)">Tasks</a></span>, <span class='object_link'><a href="API/Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span>
+    
+  
+    
+  
+</p>
+
+  
+    <h2>
+      Constant Summary
+      <small><a href="#" class="constants_summary_toggle">collapse</a></small>
+    </h2>
+
+    <dl class="constants">
+      
+        <dt id="DEFAULT_SERIALIZER-constant" class="">DEFAULT_SERIALIZER =
+          
+        </dt>
+        <dd><pre class="code"><span class='const'>MultiJson</span></pre></dd>
+      
+        <dt id="COMMON_PARAMS-constant" class="">COMMON_PARAMS =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span>
+  <span class='symbol'>:ignore</span><span class='comma'>,</span>                        <span class='comment'># Client specific parameters
+</span>  <span class='symbol'>:index</span><span class='comma'>,</span> <span class='symbol'>:id</span><span class='comma'>,</span>                    <span class='comment'># :index/:id
+</span>  <span class='symbol'>:body</span><span class='comma'>,</span>                          <span class='comment'># Request body
+</span>  <span class='symbol'>:node_id</span><span class='comma'>,</span>                       <span class='comment'># Cluster
+</span>  <span class='symbol'>:name</span><span class='comma'>,</span>                          <span class='comment'># Alias, template, settings, warmer, ...
+</span>  <span class='symbol'>:field</span>                          <span class='comment'># Get field mapping
+</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="COMMON_QUERY_PARAMS-constant" class="">COMMON_QUERY_PARAMS =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span>
+  <span class='symbol'>:ignore</span><span class='comma'>,</span>                        <span class='comment'># Client specific parameters
+</span>  <span class='symbol'>:format</span><span class='comma'>,</span>                        <span class='comment'># Search, Cat, ...
+</span>  <span class='symbol'>:pretty</span><span class='comma'>,</span>                        <span class='comment'># Pretty-print the response
+</span>  <span class='symbol'>:human</span><span class='comma'>,</span>                         <span class='comment'># Return numeric values in human readable format
+</span>  <span class='symbol'>:filter_path</span><span class='comma'>,</span>                   <span class='comment'># Filter the JSON response
+</span>  <span class='symbol'>:opaque_id</span>                      <span class='comment'># Use X-Opaque-Id
+</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="HTTP_GET-constant" class="">HTTP_GET =
+          
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>GET</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
+      
+        <dt id="HTTP_HEAD-constant" class="">HTTP_HEAD =
+          
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>HEAD</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
+      
+        <dt id="HTTP_POST-constant" class="">HTTP_POST =
+          
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>POST</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
+      
+        <dt id="HTTP_PUT-constant" class="">HTTP_PUT =
+          
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>PUT</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
+      
+        <dt id="HTTP_DELETE-constant" class="">HTTP_DELETE =
+          
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>DELETE</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
+      
+        <dt id="UNDERSCORE_SEARCH-constant" class="">UNDERSCORE_SEARCH =
+          
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>_search</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
+      
+        <dt id="UNDERSCORE_ALL-constant" class="">UNDERSCORE_ALL =
+          
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>_all</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
+      
+        <dt id="DEFAULT_DOC-constant" class="">DEFAULT_DOC =
+          
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>_doc</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
+      
+        <dt id="VERSION-constant" class="">VERSION =
+          
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>2.1.0</span><span class='tstring_end'>&#39;</span></span><span class='period'>.</span><span class='id identifier rubyid_freeze'>freeze</span></pre></dd>
+      
+    </dl>
+  
+
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#included-class_method" title="included (class method)">.<strong>included</strong>(base)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Auto-include all namespaces in the receiver.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#serializer-class_method" title="serializer (class method)">.<strong>serializer</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The serializer class.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#settings-class_method" title="settings (class method)">.<strong>settings</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Access the module settings.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="included-class_method">
+  
+    .<strong>included</strong>(base)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Auto-include all namespaces in the receiver</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api.rb', line 72</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_included'>included</span><span class='lparen'>(</span><span class='id identifier rubyid_base'>base</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_base'>base</span><span class='period'>.</span><span class='id identifier rubyid_send'>send</span> <span class='symbol'>:include</span><span class='comma'>,</span>
+            <span class='const'><span class='object_link'><a href="../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="API/Common.html" title="OpenSearch::API::Common (module)">Common</a></span></span><span class='comma'>,</span>
+            <span class='const'><span class='object_link'><a href="../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="API/Actions.html" title="OpenSearch::API::Actions (module)">Actions</a></span></span><span class='comma'>,</span>
+            <span class='const'><span class='object_link'><a href="../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="API/Cluster.html" title="OpenSearch::API::Cluster (module)">Cluster</a></span></span><span class='comma'>,</span>
+            <span class='const'><span class='object_link'><a href="../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="API/Nodes.html" title="OpenSearch::API::Nodes (module)">Nodes</a></span></span><span class='comma'>,</span>
+            <span class='const'><span class='object_link'><a href="../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="API/Indices.html" title="OpenSearch::API::Indices (module)">Indices</a></span></span><span class='comma'>,</span>
+            <span class='const'><span class='object_link'><a href="../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="API/Ingest.html" title="OpenSearch::API::Ingest (module)">Ingest</a></span></span><span class='comma'>,</span>
+            <span class='const'><span class='object_link'><a href="../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="API/Snapshot.html" title="OpenSearch::API::Snapshot (module)">Snapshot</a></span></span><span class='comma'>,</span>
+            <span class='const'><span class='object_link'><a href="../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="API/Tasks.html" title="OpenSearch::API::Tasks (module)">Tasks</a></span></span><span class='comma'>,</span>
+            <span class='const'><span class='object_link'><a href="../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="API/Cat.html" title="OpenSearch::API::Cat (module)">Cat</a></span></span><span class='comma'>,</span>
+            <span class='const'><span class='object_link'><a href="../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="API/Remote.html" title="OpenSearch::API::Remote (module)">Remote</a></span></span><span class='comma'>,</span>
+            <span class='const'><span class='object_link'><a href="../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="API/DanglingIndices.html" title="OpenSearch::API::DanglingIndices (module)">DanglingIndices</a></span></span><span class='comma'>,</span>
+            <span class='const'><span class='object_link'><a href="../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="API/Features.html" title="OpenSearch::API::Features (module)">Features</a></span></span><span class='comma'>,</span>
+            <span class='const'><span class='object_link'><a href="../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="API/Shutdown.html" title="OpenSearch::API::Shutdown (module)">Shutdown</a></span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="serializer-class_method">
+  
+    .<strong>serializer</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The serializer class</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+91
+92
+93</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api.rb', line 91</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_serializer'>serializer</span>
+  <span class='id identifier rubyid_settings'>settings</span><span class='lbracket'>[</span><span class='symbol'>:serializer</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='const'><span class='object_link'><a href="#DEFAULT_SERIALIZER-constant" title="OpenSearch::API::DEFAULT_SERIALIZER (constant)">DEFAULT_SERIALIZER</a></span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="settings-class_method">
+  
+    .<strong>settings</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Access the module settings</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+97
+98
+99</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api.rb', line 97</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_settings'>settings</span>
+  <span class='ivar'>@settings</span> <span class='op'>||=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Wed Mar  8 14:43:55 2023 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.28 (ruby-3.1.3).
+</div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,3177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: OpenSearch::API::Cluster::Actions
+  
+    &mdash; Documentation by YARD 0.9.28
+  
+</title>
+
+  <link rel="stylesheet" href="../../../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../../../css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "OpenSearch::API::Cluster::Actions";
+  relpath = '../../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../../_index.html">Index (A)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Cluster.html" title="OpenSearch::API::Cluster (module)">Cluster</a></span></span>
+     &raquo; 
+    <span class="title">Actions</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Module: OpenSearch::API::Cluster::Actions
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+  <dl>
+    <dt>Included in:</dt>
+    <dd><span class='object_link'><a href="ClusterClient.html" title="OpenSearch::API::Cluster::ClusterClient (class)">ClusterClient</a></span></dd>
+  </dl>
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/opensearch/api/namespace/cluster.rb<span class="defines">,<br />
+  lib/opensearch/api/actions/cluster/state.rb,<br /> lib/opensearch/api/actions/cluster/stats.rb,<br /> lib/opensearch/api/actions/cluster/health.rb,<br /> lib/opensearch/api/actions/cluster/reroute.rb,<br /> lib/opensearch/api/actions/cluster/remote_info.rb,<br /> lib/opensearch/api/actions/cluster/get_settings.rb,<br /> lib/opensearch/api/actions/cluster/put_settings.rb,<br /> lib/opensearch/api/actions/cluster/pending_tasks.rb,<br /> lib/opensearch/api/actions/cluster/params_registry.rb,<br /> lib/opensearch/api/actions/cluster/allocation_explain.rb,<br /> lib/opensearch/api/actions/cluster/get_component_template.rb,<br /> lib/opensearch/api/actions/cluster/put_component_template.rb,<br /> lib/opensearch/api/actions/cluster/delete_component_template.rb,<br /> lib/opensearch/api/actions/cluster/exists_component_template.rb,<br /> lib/opensearch/api/actions/cluster/post_voting_config_exclusions.rb,<br /> lib/opensearch/api/actions/cluster/delete_voting_config_exclusions.rb</span>
+</dd>
+  </dl>
+  
+</div>
+
+<h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Cluster::Actions::ParamsRegistry (module)">ParamsRegistry</a></span>
+    
+  
+    
+  
+</p>
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#allocation_explain-instance_method" title="#allocation_explain (instance method)">#<strong>allocation_explain</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Provides explanations for shard allocations in the cluster.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#delete_component_template-instance_method" title="#delete_component_template (instance method)">#<strong>delete_component_template</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Deletes a component template.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#delete_voting_config_exclusions-instance_method" title="#delete_voting_config_exclusions (instance method)">#<strong>delete_voting_config_exclusions</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Clears cluster voting config exclusions.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#exists_component_template-instance_method" title="#exists_component_template (instance method)">#<strong>exists_component_template</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+      (also: #exists_component_template?)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns information about whether a particular component template exist.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_component_template-instance_method" title="#get_component_template (instance method)">#<strong>get_component_template</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns one or more component templates.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_settings-instance_method" title="#get_settings (instance method)">#<strong>get_settings</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns cluster settings.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#health-instance_method" title="#health (instance method)">#<strong>health</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns basic information about the health of the cluster.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#pending_tasks-instance_method" title="#pending_tasks (instance method)">#<strong>pending_tasks</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns a list of any cluster-level changes (e.g. create index, update mapping, allocate or fail shard) which have not yet been executed.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#post_voting_config_exclusions-instance_method" title="#post_voting_config_exclusions (instance method)">#<strong>post_voting_config_exclusions</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Updates the cluster voting config exclusions by node ids or node names.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#put_component_template-instance_method" title="#put_component_template (instance method)">#<strong>put_component_template</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates or updates a component template.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#put_settings-instance_method" title="#put_settings (instance method)">#<strong>put_settings</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Updates the cluster settings.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#remote_info-instance_method" title="#remote_info (instance method)">#<strong>remote_info</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the information about configured remote clusters.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#reroute-instance_method" title="#reroute (instance method)">#<strong>reroute</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Allows to manually change the allocation of individual shards in the cluster.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#state-instance_method" title="#state (instance method)">#<strong>state</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns a comprehensive information about the state of the cluster.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#stats-instance_method" title="#stats (instance method)">#<strong>stats</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns high-level overview of cluster statistics.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="allocation_explain-instance_method">
+  
+    #<strong>allocation_explain</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Provides explanations for shard allocations in the cluster.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:include_yes_decisions</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Return ‘YES’ decisions in explanation (default: false)</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:include_disk_info</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Return information about disk usage and shard sizes (default: false)</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:body</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The index, shard, and primary flag to explain. Empty means ‘explain the first unassigned shard’</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/cluster/allocation_explain.rb', line 39</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_allocation_explain'>allocation_explain</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:body</span><span class='rbracket'>]</span>
+             <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_POST-constant" title="OpenSearch::API::HTTP_POST (constant)">HTTP_POST</a></span></span>
+           <span class='kw'>else</span>
+             <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_GET-constant" title="OpenSearch::API::HTTP_GET (constant)">HTTP_GET</a></span></span>
+           <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_path'>path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_cluster/allocation/explain</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Cluster::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Cluster::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:body</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="delete_component_template-instance_method">
+  
+    #<strong>delete_component_template</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Deletes a component template</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:name</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The name of the template</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Specify timeout for connection to master</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:cluster_manager_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Specify timeout for connection to cluster_manager</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/cluster/delete_component_template.rb', line 40</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_delete_component_template'>delete_component_template</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;name&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:name</span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid__name'>_name</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:name</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_DELETE-constant" title="OpenSearch::API::HTTP_DELETE (constant)">HTTP_DELETE</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_component_template/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__name'>_name</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Cluster::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Cluster::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="delete_voting_config_exclusions-instance_method">
+  
+    #<strong>delete_voting_config_exclusions</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Clears cluster voting config exclusions.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:wait_for_removal</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Specifies whether to wait for all excluded nodes to be removed from the cluster before clearing the voting configuration exclusions list.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/cluster/delete_voting_config_exclusions.rb', line 37</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_delete_voting_config_exclusions'>delete_voting_config_exclusions</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_DELETE-constant" title="OpenSearch::API::HTTP_DELETE (constant)">HTTP_DELETE</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_cluster/voting_config_exclusions</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Cluster::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Cluster::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="exists_component_template-instance_method">
+  
+    #<strong>exists_component_template</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='exists_component_template?-instance_method'>exists_component_template?</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns information about whether a particular component template exist</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:name</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The name of the template</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to master node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:cluster_manager_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to cluster_manager node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:local</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Return local information, do not retrieve the state from cluster_manager node (default: false)</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/cluster/exists_component_template.rb', line 40</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_exists_component_template'>exists_component_template</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;name&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:name</span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid__name'>_name</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:name</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_HEAD-constant" title="OpenSearch::API::HTTP_HEAD (constant)">HTTP_HEAD</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_component_template/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__name'>_name</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Cluster::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Cluster::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_component_template-instance_method">
+  
+    #<strong>get_component_template</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns one or more component templates</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:name</span>
+          <span class="type">(<tt>List</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The comma separated names of the component templates</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to master node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:cluster_manager_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to cluster_manager node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:local</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Return local information, do not retrieve the state from cluster_manager node (default: false)</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/cluster/get_component_template.rb', line 40</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_component_template'>get_component_template</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid__name'>_name</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:name</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_GET-constant" title="OpenSearch::API::HTTP_GET (constant)">HTTP_GET</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid__name'>_name</span>
+             <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_component_template/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__name'>_name</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+           <span class='kw'>else</span>
+             <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_component_template</span><span class='tstring_end'>&quot;</span></span>
+           <span class='kw'>end</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Cluster::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Cluster::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_settings-instance_method">
+  
+    #<strong>get_settings</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns cluster settings.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:flat_settings</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Return settings in flat format (default: false)</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to master node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:cluster_manager_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to cluster_manager node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:include_defaults</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Whether to return all default clusters setting.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/cluster/get_settings.rb', line 41</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_settings'>get_settings</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_GET-constant" title="OpenSearch::API::HTTP_GET (constant)">HTTP_GET</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_cluster/settings</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Cluster::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Cluster::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="health-instance_method">
+  
+    #<strong>health</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns basic information about the health of the cluster.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:index</span>
+          <span class="type">(<tt>List</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Limit the information returned to a specific index</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:expand_wildcards</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Whether to expand wildcard expression to concrete indices that are open, closed or both. (options: open, closed, hidden, none, all)</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:level</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Specify the level of detail for returned information (options: cluster, indices, shards)</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:local</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Return local information, do not retrieve the state from cluster_manager node (default: false)</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to master node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:cluster_manager_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to cluster_manager node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:wait_for_active_shards</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Wait until the specified number of shards is active</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:wait_for_nodes</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Wait until the specified number of nodes is available</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:wait_for_events</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Wait until all currently queued events with the given priority are processed (options: immediate, urgent, high, normal, low, languid)</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:wait_for_no_relocating_shards</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Whether to wait until there are no relocating shards in the cluster</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:wait_for_no_initializing_shards</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Whether to wait until there are no initializing shards in the cluster</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:wait_for_status</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Wait until cluster is in a specific state (options: green, yellow, red)</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/cluster/health.rb', line 49</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_health'>health</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid__index'>_index</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:index</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_GET-constant" title="OpenSearch::API::HTTP_GET (constant)">HTTP_GET</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid__index'>_index</span>
+             <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_cluster/health/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__index'>_index</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+           <span class='kw'>else</span>
+             <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_cluster/health</span><span class='tstring_end'>&quot;</span></span>
+           <span class='kw'>end</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Cluster::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Cluster::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="pending_tasks-instance_method">
+  
+    #<strong>pending_tasks</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a list of any cluster-level changes (e.g. create index, update mapping, allocate or fail shard) which have not yet been executed.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:local</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Return local information, do not retrieve the state from cluster_manager node (default: false)</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Specify timeout for connection to master</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:cluster_manager_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Specify timeout for connection to cluster_manager</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/cluster/pending_tasks.rb', line 40</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_pending_tasks'>pending_tasks</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_GET-constant" title="OpenSearch::API::HTTP_GET (constant)">HTTP_GET</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_cluster/pending_tasks</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Cluster::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Cluster::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="post_voting_config_exclusions-instance_method">
+  
+    #<strong>post_voting_config_exclusions</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Updates the cluster voting config exclusions by node ids or node names.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:node_ids</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A comma-separated list of the persistent ids of the nodes to exclude from the voting configuration. If specified, you may not also specify ?node_names.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:node_names</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A comma-separated list of the names of the nodes to exclude from the voting configuration. If specified, you may not also specify ?node_ids.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/cluster/post_voting_config_exclusions.rb', line 39</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_post_voting_config_exclusions'>post_voting_config_exclusions</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_POST-constant" title="OpenSearch::API::HTTP_POST (constant)">HTTP_POST</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_cluster/voting_config_exclusions</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Cluster::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Cluster::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="put_component_template-instance_method">
+  
+    #<strong>put_component_template</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates or updates a component template</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:name</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The name of the template</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:create</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Whether the index template should only be added if new or can also replace an existing one</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Specify timeout for connection to master</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:cluster_manager_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Specify timeout for connection to cluster_manager</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:body</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The template definition (<strong>Required</strong>)</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/cluster/put_component_template.rb', line 42</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_put_component_template'>put_component_template</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;body&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:body</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;name&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:name</span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid__name'>_name</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:name</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_PUT-constant" title="OpenSearch::API::HTTP_PUT (constant)">HTTP_PUT</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_component_template/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__name'>_name</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Cluster::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Cluster::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:body</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="put_settings-instance_method">
+  
+    #<strong>put_settings</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Updates the cluster settings.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:flat_settings</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Return settings in flat format (default: false)</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to master node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:cluster_manager_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to cluster_manager node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:body</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The settings to be updated. Can be either ‘transient` or `persistent` (survives cluster restart). (<strong>Required</strong>)</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/cluster/put_settings.rb', line 41</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_put_settings'>put_settings</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;body&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:body</span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_PUT-constant" title="OpenSearch::API::HTTP_PUT (constant)">HTTP_PUT</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_cluster/settings</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Cluster::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Cluster::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:body</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="remote_info-instance_method">
+  
+    #<strong>remote_info</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the information about configured remote clusters.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/cluster/remote_info.rb', line 36</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_remote_info'>remote_info</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_GET-constant" title="OpenSearch::API::HTTP_GET (constant)">HTTP_GET</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_remote/info</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="reroute-instance_method">
+  
+    #<strong>reroute</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Allows to manually change the allocation of individual shards in the cluster.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:dry_run</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Simulate the operation only and return the resulting state</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:explain</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Return an explanation of why the commands can or cannot be executed</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:retry_failed</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Retries allocation of shards that are blocked due to too many subsequent allocation failures</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:metric</span>
+          <span class="type">(<tt>List</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Limit the information returned to the specified metrics. Defaults to all but metadata (options: _all, blocks, metadata, nodes, routing_table, cluster_manager_node, version)</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to master node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:cluster_manager_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to cluster_manager node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:body</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The definition of ‘commands` to perform (`move`, `cancel`, `allocate`)</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/cluster/reroute.rb', line 44</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_reroute'>reroute</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_POST-constant" title="OpenSearch::API::HTTP_POST (constant)">HTTP_POST</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_cluster/reroute</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Cluster::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Cluster::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:body</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="state-instance_method">
+  
+    #<strong>state</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a comprehensive information about the state of the cluster.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:metric</span>
+          <span class="type">(<tt>List</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Limit the information returned to the specified metrics (options: _all, blocks, metadata, nodes, routing_table, routing_nodes, master_node, version)</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:index</span>
+          <span class="type">(<tt>List</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A comma-separated list of index names; use ‘_all` or empty string to perform the operation on all indices</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:local</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Return local information, do not retrieve the state from cluster_manager node (default: false)</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Specify timeout for connection to master</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:cluster_manager_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Specify timeout for connection to cluster_manager</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:flat_settings</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Return settings in flat format (default: false)</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:wait_for_metadata_version</span>
+          <span class="type">(<tt>Number</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Wait for the metadata version to be equal or greater than the specified metadata version</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:wait_for_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The maximum time to wait for wait_for_metadata_version before timing out</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:ignore_unavailable</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Whether specified concrete indices should be ignored when unavailable (missing or closed)</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:allow_no_indices</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Whether to ignore if a wildcard indices expression resolves into no concrete indices. (This includes ‘_all` string or when no indices have been specified)</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:expand_wildcards</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Whether to expand wildcard expression to concrete indices that are open, closed or both. (options: open, closed, hidden, none, all)</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/cluster/state.rb', line 47</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_state'>state</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid__metric'>_metric</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:metric</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid__index'>_index</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:index</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_GET-constant" title="OpenSearch::API::HTTP_GET (constant)">HTTP_GET</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid__metric'>_metric</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid__index'>_index</span>
+             <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_cluster/state/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__metric'>_metric</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__index'>_index</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+           <span class='kw'>elsif</span> <span class='id identifier rubyid__metric'>_metric</span>
+             <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_cluster/state/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__metric'>_metric</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+           <span class='kw'>else</span>
+             <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_cluster/state</span><span class='tstring_end'>&quot;</span></span>
+           <span class='kw'>end</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Cluster::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Cluster::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="stats-instance_method">
+  
+    #<strong>stats</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns high-level overview of cluster statistics.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:node_id</span>
+          <span class="type">(<tt>List</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A comma-separated list of node IDs or names to limit the returned information; use ‘_local` to return information from the node you’re connecting to, leave empty to get information from all nodes</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:flat_settings</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Return settings in flat format (default: false)</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/cluster/stats.rb', line 39</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_stats'>stats</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid__node_id'>_node_id</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:node_id</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_GET-constant" title="OpenSearch::API::HTTP_GET (constant)">HTTP_GET</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid__node_id'>_node_id</span>
+             <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_cluster/stats/nodes/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__node_id'>_node_id</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+           <span class='kw'>else</span>
+             <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_cluster/stats</span><span class='tstring_end'>&quot;</span></span>
+           <span class='kw'>end</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Cluster::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Cluster::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Wed Mar  8 14:43:57 2023 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.28 (ruby-3.1.3).
+</div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: OpenSearch::DSL::Search::BaseAggregationComponent
+  
+    &mdash; Documentation by YARD 0.9.28
+  
+</title>
+
+  <link rel="stylesheet" href="../../../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../../../css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "OpenSearch::DSL::Search::BaseAggregationComponent";
+  relpath = '../../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../../_index.html">Index (B)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../DSL.html" title="OpenSearch::DSL (module)">DSL</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Search.html" title="OpenSearch::DSL::Search (module)">Search</a></span></span>
+     &raquo; 
+    <span class="title">BaseAggregationComponent</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Module: OpenSearch::DSL::Search::BaseAggregationComponent
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+  <dl>
+    <dt>Included in:</dt>
+    <dd><span class='object_link'><a href="Aggregations/AvgBucket.html" title="OpenSearch::DSL::Search::Aggregations::AvgBucket (class)">Aggregations::AvgBucket</a></span>, <span class='object_link'><a href="Aggregations/BucketScript.html" title="OpenSearch::DSL::Search::Aggregations::BucketScript (class)">Aggregations::BucketScript</a></span>, <span class='object_link'><a href="Aggregations/BucketSelector.html" title="OpenSearch::DSL::Search::Aggregations::BucketSelector (class)">Aggregations::BucketSelector</a></span>, <span class='object_link'><a href="Aggregations/BucketSort.html" title="OpenSearch::DSL::Search::Aggregations::BucketSort (class)">Aggregations::BucketSort</a></span>, <span class='object_link'><a href="Aggregations/Children.html" title="OpenSearch::DSL::Search::Aggregations::Children (class)">Aggregations::Children</a></span>, <span class='object_link'><a href="Aggregations/Composite.html" title="OpenSearch::DSL::Search::Aggregations::Composite (class)">Aggregations::Composite</a></span>, <span class='object_link'><a href="Aggregations/CumulativeSum.html" title="OpenSearch::DSL::Search::Aggregations::CumulativeSum (class)">Aggregations::CumulativeSum</a></span>, <span class='object_link'><a href="Aggregations/DateHistogram.html" title="OpenSearch::DSL::Search::Aggregations::DateHistogram (class)">Aggregations::DateHistogram</a></span>, <span class='object_link'><a href="Aggregations/DateRange.html" title="OpenSearch::DSL::Search::Aggregations::DateRange (class)">Aggregations::DateRange</a></span>, <span class='object_link'><a href="Aggregations/Derivative.html" title="OpenSearch::DSL::Search::Aggregations::Derivative (class)">Aggregations::Derivative</a></span>, <span class='object_link'><a href="Aggregations/ExtendedStatsBucket.html" title="OpenSearch::DSL::Search::Aggregations::ExtendedStatsBucket (class)">Aggregations::ExtendedStatsBucket</a></span>, <span class='object_link'><a href="Aggregations/Filter.html" title="OpenSearch::DSL::Search::Aggregations::Filter (class)">Aggregations::Filter</a></span>, <span class='object_link'><a href="Aggregations/Filters.html" title="OpenSearch::DSL::Search::Aggregations::Filters (class)">Aggregations::Filters</a></span>, <span class='object_link'><a href="Aggregations/GeoDistance.html" title="OpenSearch::DSL::Search::Aggregations::GeoDistance (class)">Aggregations::GeoDistance</a></span>, <span class='object_link'><a href="Aggregations/GeohashGrid.html" title="OpenSearch::DSL::Search::Aggregations::GeohashGrid (class)">Aggregations::GeohashGrid</a></span>, <span class='object_link'><a href="Aggregations/Global.html" title="OpenSearch::DSL::Search::Aggregations::Global (class)">Aggregations::Global</a></span>, <span class='object_link'><a href="Aggregations/Histogram.html" title="OpenSearch::DSL::Search::Aggregations::Histogram (class)">Aggregations::Histogram</a></span>, <span class='object_link'><a href="Aggregations/IpRange.html" title="OpenSearch::DSL::Search::Aggregations::IpRange (class)">Aggregations::IpRange</a></span>, <span class='object_link'><a href="Aggregations/MaxBucket.html" title="OpenSearch::DSL::Search::Aggregations::MaxBucket (class)">Aggregations::MaxBucket</a></span>, <span class='object_link'><a href="Aggregations/MinBucket.html" title="OpenSearch::DSL::Search::Aggregations::MinBucket (class)">Aggregations::MinBucket</a></span>, <span class='object_link'><a href="Aggregations/Missing.html" title="OpenSearch::DSL::Search::Aggregations::Missing (class)">Aggregations::Missing</a></span>, <span class='object_link'><a href="Aggregations/MovingAvg.html" title="OpenSearch::DSL::Search::Aggregations::MovingAvg (class)">Aggregations::MovingAvg</a></span>, <span class='object_link'><a href="Aggregations/Nested.html" title="OpenSearch::DSL::Search::Aggregations::Nested (class)">Aggregations::Nested</a></span>, <span class='object_link'><a href="Aggregations/PercentilesBucket.html" title="OpenSearch::DSL::Search::Aggregations::PercentilesBucket (class)">Aggregations::PercentilesBucket</a></span>, <span class='object_link'><a href="Aggregations/Range.html" title="OpenSearch::DSL::Search::Aggregations::Range (class)">Aggregations::Range</a></span>, <span class='object_link'><a href="Aggregations/ReverseNested.html" title="OpenSearch::DSL::Search::Aggregations::ReverseNested (class)">Aggregations::ReverseNested</a></span>, <span class='object_link'><a href="Aggregations/SerialDiff.html" title="OpenSearch::DSL::Search::Aggregations::SerialDiff (class)">Aggregations::SerialDiff</a></span>, <span class='object_link'><a href="Aggregations/SignificantTerms.html" title="OpenSearch::DSL::Search::Aggregations::SignificantTerms (class)">Aggregations::SignificantTerms</a></span>, <span class='object_link'><a href="Aggregations/StatsBucket.html" title="OpenSearch::DSL::Search::Aggregations::StatsBucket (class)">Aggregations::StatsBucket</a></span>, <span class='object_link'><a href="Aggregations/SumBucket.html" title="OpenSearch::DSL::Search::Aggregations::SumBucket (class)">Aggregations::SumBucket</a></span>, <span class='object_link'><a href="Aggregations/Terms.html" title="OpenSearch::DSL::Search::Aggregations::Terms (class)">Aggregations::Terms</a></span></dd>
+  </dl>
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/opensearch/dsl/search/base_aggregation_component.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Module containing common functionality for aggregation DSL classes</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="BaseAggregationComponent/InstanceMethods.html" title="OpenSearch::DSL::Search::BaseAggregationComponent::InstanceMethods (module)">InstanceMethods</a></span>
+    
+  
+    
+  
+</p>
+
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#included-class_method" title="included (class method)">.<strong>included</strong>(base)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="included-class_method">
+  
+    .<strong>included</strong>(base)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+35
+36
+37
+38</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/dsl/search/base_aggregation_component.rb', line 35</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_included'>included</span><span class='lparen'>(</span><span class='id identifier rubyid_base'>base</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_base'>base</span><span class='period'>.</span><span class='id identifier rubyid___send__'>__send__</span> <span class='symbol'>:include</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="BaseComponent.html" title="OpenSearch::DSL::Search::BaseComponent (module)">BaseComponent</a></span></span>
+  <span class='id identifier rubyid_base'>base</span><span class='period'>.</span><span class='id identifier rubyid___send__'>__send__</span> <span class='symbol'>:include</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="BaseAggregationComponent/InstanceMethods.html" title="OpenSearch::DSL::Search::BaseAggregationComponent::InstanceMethods (module)">InstanceMethods</a></span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Wed Mar  8 14:43:52 2023 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.28 (ruby-3.1.3).
+</div>
+
+    </div>
+  </body>
+</html>

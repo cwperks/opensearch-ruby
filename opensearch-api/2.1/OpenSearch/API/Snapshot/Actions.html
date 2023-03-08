@@ -1,0 +1,3058 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: OpenSearch::API::Snapshot::Actions
+  
+    &mdash; Documentation by YARD 0.9.28
+  
+</title>
+
+  <link rel="stylesheet" href="../../../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../../../css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "OpenSearch::API::Snapshot::Actions";
+  relpath = '../../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../../_index.html">Index (A)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Snapshot.html" title="OpenSearch::API::Snapshot (module)">Snapshot</a></span></span>
+     &raquo; 
+    <span class="title">Actions</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Module: OpenSearch::API::Snapshot::Actions
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+  <dl>
+    <dt>Included in:</dt>
+    <dd><span class='object_link'><a href="SnapshotClient.html" title="OpenSearch::API::Snapshot::SnapshotClient (class)">SnapshotClient</a></span></dd>
+  </dl>
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/opensearch/api/namespace/snapshot.rb<span class="defines">,<br />
+  lib/opensearch/api/actions/snapshot/get.rb,<br /> lib/opensearch/api/actions/snapshot/clone.rb,<br /> lib/opensearch/api/actions/snapshot/create.rb,<br /> lib/opensearch/api/actions/snapshot/delete.rb,<br /> lib/opensearch/api/actions/snapshot/status.rb,<br /> lib/opensearch/api/actions/snapshot/restore.rb,<br /> lib/opensearch/api/actions/snapshot/get_features.rb,<br /> lib/opensearch/api/actions/snapshot/get_repository.rb,<br /> lib/opensearch/api/actions/snapshot/params_registry.rb,<br /> lib/opensearch/api/actions/snapshot/create_repository.rb,<br /> lib/opensearch/api/actions/snapshot/delete_repository.rb,<br /> lib/opensearch/api/actions/snapshot/verify_repository.rb,<br /> lib/opensearch/api/actions/snapshot/cleanup_repository.rb,<br /> lib/opensearch/api/actions/snapshot/repository_analyze.rb</span>
+</dd>
+  </dl>
+  
+</div>
+
+<h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry (module)">ParamsRegistry</a></span>
+    
+  
+    
+  
+</p>
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#cleanup_repository-instance_method" title="#cleanup_repository (instance method)">#<strong>cleanup_repository</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Removes stale data from repository.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#clone-instance_method" title="#clone (instance method)">#<strong>clone</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Clones indices from one snapshot into another snapshot in the same repository.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#create-instance_method" title="#create (instance method)">#<strong>create</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates a snapshot in a repository.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#create_repository-instance_method" title="#create_repository (instance method)">#<strong>create_repository</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates a repository.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#delete-instance_method" title="#delete (instance method)">#<strong>delete</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Deletes a snapshot.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#delete_repository-instance_method" title="#delete_repository (instance method)">#<strong>delete_repository</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Deletes a repository.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get-instance_method" title="#get (instance method)">#<strong>get</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns information about a snapshot.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_features-instance_method" title="#get_features (instance method)">#<strong>get_features</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns a list of features which can be snapshotted in this cluster.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_repository-instance_method" title="#get_repository (instance method)">#<strong>get_repository</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns information about a repository.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#repository_analyze-instance_method" title="#repository_analyze (instance method)">#<strong>repository_analyze</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Analyzes a repository for correctness and performance.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#restore-instance_method" title="#restore (instance method)">#<strong>restore</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Restores a snapshot.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#status-instance_method" title="#status (instance method)">#<strong>status</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns information about the status of a snapshot.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#verify_repository-instance_method" title="#verify_repository (instance method)">#<strong>verify_repository</strong>(arguments = {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Verifies a repository.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="cleanup_repository-instance_method">
+  
+    #<strong>cleanup_repository</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Removes stale data from repository.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:repository</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A repository name</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to master node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:cluster_manager_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to cluster_manager node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/snapshot/cleanup_repository.rb', line 40</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cleanup_repository'>cleanup_repository</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;repository&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:repository</span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid__repository'>_repository</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:repository</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_POST-constant" title="OpenSearch::API::HTTP_POST (constant)">HTTP_POST</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_snapshot/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__repository'>_repository</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>/_cleanup</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="clone-instance_method">
+  
+    #<strong>clone</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Clones indices from one snapshot into another snapshot in the same repository.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:repository</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A repository name</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:snapshot</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The name of the snapshot to clone from</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:target_snapshot</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The name of the cloned snapshot to create</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to master node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:cluster_manager_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to cluster_manager node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:body</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The snapshot clone definition (<strong>Required</strong>)</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/snapshot/clone.rb', line 42</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_clone'>clone</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;body&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:body</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;repository&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:repository</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;snapshot&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:snapshot</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;target_snapshot&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:target_snapshot</span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid__repository'>_repository</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:repository</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid__snapshot'>_snapshot</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:snapshot</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid__target_snapshot'>_target_snapshot</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:target_snapshot</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_PUT-constant" title="OpenSearch::API::HTTP_PUT (constant)">HTTP_PUT</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_snapshot/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__repository'>_repository</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__snapshot'>_snapshot</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>/_clone/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__target_snapshot'>_target_snapshot</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:body</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="create-instance_method">
+  
+    #<strong>create</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates a snapshot in a repository.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:repository</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A repository name</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:snapshot</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A snapshot name</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to master node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:cluster_manager_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to cluster_manager node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:wait_for_completion</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Should this request wait until the operation has completed before returning</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:body</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The snapshot definition</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/snapshot/create.rb', line 42</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_create'>create</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;repository&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:repository</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;snapshot&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:snapshot</span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid__repository'>_repository</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:repository</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid__snapshot'>_snapshot</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:snapshot</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_PUT-constant" title="OpenSearch::API::HTTP_PUT (constant)">HTTP_PUT</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_snapshot/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__repository'>_repository</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__snapshot'>_snapshot</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:body</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="create_repository-instance_method">
+  
+    #<strong>create_repository</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates a repository.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:repository</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A repository name</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to master node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:cluster_manager_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to cluster_manager node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:verify</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Whether to verify the repository after creation</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:body</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The repository definition (<strong>Required</strong>)</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/snapshot/create_repository.rb', line 42</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_create_repository'>create_repository</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;body&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:body</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;repository&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:repository</span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid__repository'>_repository</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:repository</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_PUT-constant" title="OpenSearch::API::HTTP_PUT (constant)">HTTP_PUT</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_snapshot/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__repository'>_repository</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:body</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="delete-instance_method">
+  
+    #<strong>delete</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Deletes a snapshot.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:repository</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A repository name</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:snapshot</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A snapshot name</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to master node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:cluster_manager_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to cluster_manager node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/snapshot/delete.rb', line 40</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;repository&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:repository</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;snapshot&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:snapshot</span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid__repository'>_repository</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:repository</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid__snapshot'>_snapshot</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:snapshot</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_DELETE-constant" title="OpenSearch::API::HTTP_DELETE (constant)">HTTP_DELETE</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_snapshot/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__repository'>_repository</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__snapshot'>_snapshot</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='kw'>if</span> <span class='const'>Array</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:ignore</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='int'>404</span><span class='rparen'>)</span>
+    <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___rescue_from_not_found'><span class='object_link'><a href="../Utils.html#__rescue_from_not_found-instance_method" title="OpenSearch::API::Utils#__rescue_from_not_found (method)">__rescue_from_not_found</a></span></span> <span class='lbrace'>{</span> <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span> <span class='rbrace'>}</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="delete_repository-instance_method">
+  
+    #<strong>delete_repository</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Deletes a repository.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:repository</span>
+          <span class="type">(<tt>List</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Name of the snapshot repository to unregister. Wildcard (‘*`) patterns are supported.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to master node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:cluster_manager_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to cluster_manager node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/snapshot/delete_repository.rb', line 40</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_delete_repository'>delete_repository</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;repository&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:repository</span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid__repository'>_repository</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:repository</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_DELETE-constant" title="OpenSearch::API::HTTP_DELETE (constant)">HTTP_DELETE</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_snapshot/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__repository'>_repository</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='kw'>if</span> <span class='const'>Array</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:ignore</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='int'>404</span><span class='rparen'>)</span>
+    <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___rescue_from_not_found'><span class='object_link'><a href="../Utils.html#__rescue_from_not_found-instance_method" title="OpenSearch::API::Utils#__rescue_from_not_found (method)">__rescue_from_not_found</a></span></span> <span class='lbrace'>{</span> <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span> <span class='rbrace'>}</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get-instance_method">
+  
+    #<strong>get</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns information about a snapshot.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:repository</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A repository name</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:snapshot</span>
+          <span class="type">(<tt>List</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A comma-separated list of snapshot names</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to master node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:cluster_manager_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to cluster_manager node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:ignore_unavailable</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Whether to ignore unavailable snapshots, defaults to false which means a SnapshotMissingException is thrown</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:index_details</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Whether to include details of each index in the snapshot, if those details are available. Defaults to false.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:include_repository</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Whether to include the repository name in the snapshot info. Defaults to true.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:verbose</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Whether to show verbose snapshot info or only show the basic info found in the repository index blob</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/snapshot/get.rb', line 44</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;repository&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:repository</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;snapshot&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:snapshot</span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid__repository'>_repository</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:repository</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid__snapshot'>_snapshot</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:snapshot</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_GET-constant" title="OpenSearch::API::HTTP_GET (constant)">HTTP_GET</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_snapshot/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__repository'>_repository</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__snapshot'>_snapshot</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='kw'>if</span> <span class='const'>Array</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:ignore</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='int'>404</span><span class='rparen'>)</span>
+    <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___rescue_from_not_found'><span class='object_link'><a href="../Utils.html#__rescue_from_not_found-instance_method" title="OpenSearch::API::Utils#__rescue_from_not_found (method)">__rescue_from_not_found</a></span></span> <span class='lbrace'>{</span> <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span> <span class='rbrace'>}</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_features-instance_method">
+  
+    #<strong>get_features</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a list of features which can be snapshotted in this cluster.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to master node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:cluster_manager_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to cluster_manager node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/snapshot/get_features.rb', line 38</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_features'>get_features</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_GET-constant" title="OpenSearch::API::HTTP_GET (constant)">HTTP_GET</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_snapshottable_features</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_repository-instance_method">
+  
+    #<strong>get_repository</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns information about a repository.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:repository</span>
+          <span class="type">(<tt>List</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A comma-separated list of repository names</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to cluster_manager node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:local</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Return local information, do not retrieve the state from cluster_manager node (default: false)</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/snapshot/get_repository.rb', line 39</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_repository'>get_repository</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid__repository'>_repository</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:repository</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_GET-constant" title="OpenSearch::API::HTTP_GET (constant)">HTTP_GET</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid__repository'>_repository</span>
+             <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_snapshot/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__repository'>_repository</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+           <span class='kw'>else</span>
+             <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_snapshot</span><span class='tstring_end'>&quot;</span></span>
+           <span class='kw'>end</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='kw'>if</span> <span class='const'>Array</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:ignore</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='int'>404</span><span class='rparen'>)</span>
+    <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___rescue_from_not_found'><span class='object_link'><a href="../Utils.html#__rescue_from_not_found-instance_method" title="OpenSearch::API::Utils#__rescue_from_not_found (method)">__rescue_from_not_found</a></span></span> <span class='lbrace'>{</span> <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span> <span class='rbrace'>}</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="repository_analyze-instance_method">
+  
+    #<strong>repository_analyze</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Analyzes a repository for correctness and performance</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:repository</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A repository name</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:blob_count</span>
+          <span class="type">(<tt>Number</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Number of blobs to create during the test. Defaults to 100.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:concurrency</span>
+          <span class="type">(<tt>Number</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Number of operations to run concurrently during the test. Defaults to 10.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:read_node_count</span>
+          <span class="type">(<tt>Number</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Number of nodes on which to read a blob after writing. Defaults to 10.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:early_read_node_count</span>
+          <span class="type">(<tt>Number</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Number of nodes on which to perform an early read on a blob, i.e. before writing has completed. Early reads are rare actions so the ‘rare_action_probability’ parameter is also relevant. Defaults to 2.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:seed</span>
+          <span class="type">(<tt>Number</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Seed for the random number generator used to create the test workload. Defaults to a random value.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:rare_action_probability</span>
+          <span class="type">(<tt>Number</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Probability of taking a rare action such as an early read or an overwrite. Defaults to 0.02.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:max_blob_size</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Maximum size of a blob to create during the test, e.g ‘1gb’ or ‘100mb’. Defaults to ‘10mb’.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:max_total_data_size</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Maximum total size of all blobs to create during the test, e.g ‘1tb’ or ‘100gb’. Defaults to ‘1gb’.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout. Defaults to ‘30s’.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:detailed</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Whether to return detailed results or a summary. Defaults to ‘false’ so that only the summary is returned.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:rarely_abort_writes</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Whether to rarely abort writes before they complete. Defaults to ‘true’.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/snapshot/repository_analyze.rb', line 48</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_repository_analyze'>repository_analyze</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;repository&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:repository</span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid__repository'>_repository</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:repository</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_POST-constant" title="OpenSearch::API::HTTP_POST (constant)">HTTP_POST</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_snapshot/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__repository'>_repository</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>/_analyze</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="restore-instance_method">
+  
+    #<strong>restore</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Restores a snapshot.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:repository</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A repository name</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:snapshot</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A snapshot name</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to master node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:cluster_manager_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to cluster_manager node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:wait_for_completion</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Should this request wait until the operation has completed before returning</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:body</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Details of what to restore</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/snapshot/restore.rb', line 42</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_restore'>restore</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;repository&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:repository</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;snapshot&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:snapshot</span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid__repository'>_repository</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:repository</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid__snapshot'>_snapshot</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:snapshot</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_POST-constant" title="OpenSearch::API::HTTP_POST (constant)">HTTP_POST</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_snapshot/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__repository'>_repository</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__snapshot'>_snapshot</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>/_restore</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:body</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="status-instance_method">
+  
+    #<strong>status</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns information about the status of a snapshot.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:repository</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A repository name</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:snapshot</span>
+          <span class="type">(<tt>List</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A comma-separated list of snapshot names</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to master node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:cluster_manager_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to cluster_manager node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:ignore_unavailable</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Whether to ignore unavailable snapshots, defaults to false which means a SnapshotMissingException is thrown</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/snapshot/status.rb', line 41</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_status'>status</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid__repository'>_repository</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:repository</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid__snapshot'>_snapshot</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:snapshot</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_GET-constant" title="OpenSearch::API::HTTP_GET (constant)">HTTP_GET</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid__repository'>_repository</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid__snapshot'>_snapshot</span>
+             <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_snapshot/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__repository'>_repository</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__snapshot'>_snapshot</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>/_status</span><span class='tstring_end'>&quot;</span></span>
+           <span class='kw'>elsif</span> <span class='id identifier rubyid__repository'>_repository</span>
+             <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_snapshot/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__repository'>_repository</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>/_status</span><span class='tstring_end'>&quot;</span></span>
+           <span class='kw'>else</span>
+             <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_snapshot/_status</span><span class='tstring_end'>&quot;</span></span>
+           <span class='kw'>end</span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='kw'>if</span> <span class='const'>Array</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:ignore</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='int'>404</span><span class='rparen'>)</span>
+    <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___rescue_from_not_found'><span class='object_link'><a href="../Utils.html#__rescue_from_not_found-instance_method" title="OpenSearch::API::Utils#__rescue_from_not_found (method)">__rescue_from_not_found</a></span></span> <span class='lbrace'>{</span> <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span> <span class='rbrace'>}</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="verify_repository-instance_method">
+  
+    #<strong>verify_repository</strong>(arguments = {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Verifies a repository.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>arguments</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>arguments</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:repository</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A repository name</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:master_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>DEPRECATED: use cluster_manager_timeout instead</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to master node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:cluster_manager_timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout for connection to cluster_manager node</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:timeout</span>
+          <span class="type">(<tt>Time</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Explicit operation timeout</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:headers</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Custom HTTP headers</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Raises:</p>
+<ul class="raise">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>ArgumentError</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/opensearch/api/actions/snapshot/verify_repository.rb', line 40</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_verify_repository'>verify_repository</span><span class='lparen'>(</span><span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_raise'>raise</span> <span class='const'>ArgumentError</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Required argument &#39;repository&#39; missing</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>unless</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='lbracket'>[</span><span class='symbol'>:repository</span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:headers</span><span class='rparen'>)</span> <span class='op'>||</span> <span class='lbrace'>{</span><span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_arguments'>arguments</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+
+  <span class='id identifier rubyid__repository'>_repository</span> <span class='op'>=</span> <span class='id identifier rubyid_arguments'>arguments</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:repository</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_method'>method</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../../OpenSearch.html" title="OpenSearch (module)">OpenSearch</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html" title="OpenSearch::API (module)">API</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../../API.html#HTTP_POST-constant" title="OpenSearch::API::HTTP_POST (constant)">HTTP_POST</a></span></span>
+  <span class='id identifier rubyid_path'>path</span>   <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>_snapshot/</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___listify'><span class='object_link'><a href="../Utils.html#__listify-instance_method" title="OpenSearch::API::Utils#__listify (method)">__listify</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid__repository'>_repository</span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>/_verify</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../Utils.html" title="OpenSearch::API::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid___validate_and_extract_params'><span class='object_link'><a href="../Utils.html#__validate_and_extract_params-instance_method" title="OpenSearch::API::Utils#__validate_and_extract_params (method)">__validate_and_extract_params</a></span></span> <span class='id identifier rubyid_arguments'>arguments</span><span class='comma'>,</span> <span class='const'><span class='object_link'><a href="Actions/ParamsRegistry.html" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry (module)">ParamsRegistry</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'><span class='object_link'><a href="Actions/ParamsRegistry.html#get-instance_method" title="OpenSearch::API::Snapshot::Actions::ParamsRegistry#get (method)">get</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid___method__'>__method__</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_body'>body</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='id identifier rubyid_perform_request'>perform_request</span><span class='lparen'>(</span><span class='id identifier rubyid_method'>method</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_params'>params</span><span class='comma'>,</span> <span class='id identifier rubyid_body'>body</span><span class='comma'>,</span> <span class='id identifier rubyid_headers'>headers</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_body'>body</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Wed Mar  8 14:43:58 2023 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.28 (ruby-3.1.3).
+</div>
+
+    </div>
+  </body>
+</html>
